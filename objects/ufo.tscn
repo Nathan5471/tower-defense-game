@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cf1vif2xk6q2d"]
+
+[ext_resource type="Texture2D" uid="uid://gf3qdvoyv17q" path="res://assets/UFO/UFO-0.png" id="1_1n3ki"]
+[ext_resource type="Script" uid="uid://cgag4gka0f6ye" path="res://scripts/ufoManager.gd" id="1_gnper"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sik88"]
+radius = 35.0
+height = 86.0
+
+[node name="Ufo" type="PathFollow2D" unique_id=1137948765]
+script = ExtResource("1_gnper")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1460168949]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=92987239]
+shape = SubResource("CapsuleShape2D_sik88")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1988010576]
+texture = ExtResource("1_1n3ki")
