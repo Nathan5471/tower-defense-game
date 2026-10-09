@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bvbfiqybkool8"]
+
+[ext_resource type="Texture2D" uid="uid://dsd0qq1dt35nm" path="res://assets/Landscape tiles/grass.png" id="1_7nadc"]
+[ext_resource type="Script" uid="uid://c7hx4paeww0yr" path="res://scripts/groundBlockManager.gd" id="1_exr44"]
+
+[node name="GroundBlock" type="Area2D" unique_id=2100741410]
+script = ExtResource("1_exr44")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2100483433]
+texture = ExtResource("1_7nadc")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=1572095191]
+position = Vector2(-43, -68)
+rotation = 0.7853982
+polygon = PackedVector2Array(-4.2426376, -65.05383, 135.76451, -103.237595, 96.166534, 33.941124, -42.426407, 73.53911)

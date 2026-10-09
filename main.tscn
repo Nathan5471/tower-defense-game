@@ -1,3 +1,32 @@
 [gd_scene format=3 uid="uid://giae87vnc2yq"]
 
-[node name="Node2D" type="Node2D" unique_id=308983968]
+[ext_resource type="PackedScene" uid="uid://bvbfiqybkool8" path="res://objects/groundBlock.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://lfs2yf05ig3s" path="res://objects/roadBlock.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://didstxgwid1dw" path="res://objects/archerTower.tscn" id="3_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://cwftwhga6n124" path="res://objects/wizardTower.tscn" id="4_lquwl"]
+
+[node name="Main" type="Node2D" unique_id=308983968]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=329241016]
+
+[node name="Blocks" type="Node2D" parent="." unique_id=1458832009]
+
+[node name="GroundBlock" parent="Blocks" unique_id=2100741410 instance=ExtResource("1_0xm2m")]
+position = Vector2(123, -69)
+
+[node name="GroundBlock2" parent="Blocks" unique_id=1624031091 instance=ExtResource("1_0xm2m")]
+position = Vector2(247, 2)
+
+[node name="RoadBlock" parent="Blocks" unique_id=1992821424 instance=ExtResource("1_ig7tw")]
+
+[node name="RoadBlock2" parent="Blocks" unique_id=1825764632 instance=ExtResource("1_ig7tw")]
+position = Vector2(124, 72)
+
+[node name="Towers" type="Node2D" parent="." unique_id=1086228106]
+
+[node name="ArcherTower" parent="Towers" unique_id=1035109298 instance=ExtResource("3_1bvp3")]
+position = Vector2(118, -149)
+level = 2
+
+[node name="WizardTower" parent="Towers" unique_id=858212529 instance=ExtResource("4_lquwl")]
+position = Vector2(250, -52)

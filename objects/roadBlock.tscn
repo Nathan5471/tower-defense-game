@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://lfs2yf05ig3s"]
+
+[ext_resource type="Script" uid="uid://cwpo8l8uaoe6v" path="res://scripts/roadBlockManager.gd" id="1_p2sju"]
+[ext_resource type="Texture2D" uid="uid://7s28w46fqip7" path="res://assets/Road tiles/Spring biome/road_spring(1).png" id="1_vkohd"]
+
+[node name="RoadBlock" type="Area2D" unique_id=1992821424]
+script = ExtResource("1_p2sju")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1002809493]
+texture = ExtResource("1_vkohd")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=1589457533]
+position = Vector2(-43, -68)
+rotation = 0.7853982
+scale = Vector2(0.9999999, 0.9999999)
+polygon = PackedVector2Array(-4.2426376, -65.05383, 135.76451, -103.237595, 96.166534, 33.941124, -42.426407, 73.53911)
