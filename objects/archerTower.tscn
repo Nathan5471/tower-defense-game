@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://didstxgwid1dw"]
+
+[ext_resource type="Script" uid="uid://q2t0jq2tqrqf" path="res://scripts/archerTowerManager.gd" id="1_21tbo"]
+[ext_resource type="Texture2D" uid="uid://dd06cwa5ogg62" path="res://assets/Towers/Archer/archer_level_0.png" id="1_foxna"]
+
+[node name="ArcherTower" type="Area2D" unique_id=1035109298]
+script = ExtResource("1_21tbo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=424827157]
+texture = ExtResource("1_foxna")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=1446721064]
+polygon = PackedVector2Array(0, 83, 65, 45, 65, -46, 0, -85, -64, -47, -66, 44)

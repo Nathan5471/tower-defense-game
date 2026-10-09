@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cwftwhga6n124"]
+
+[ext_resource type="Script" uid="uid://cybw4vld21ikk" path="res://scripts/wizardTowerManager.gd" id="1_0arkp"]
+[ext_resource type="Texture2D" uid="uid://cvwlrlf712fc4" path="res://assets/Towers/Wizard/wizard_level_0.png" id="1_56grm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sik88"]
+radius = 65.00769
+
+[node name="WizardTower" type="Area2D" unique_id=858212529]
+script = ExtResource("1_0arkp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=352473211]
+texture = ExtResource("1_56grm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=318011908]
+shape = SubResource("CircleShape2D_sik88")

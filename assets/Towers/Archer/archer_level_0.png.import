@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://35khwqyglq6t"
-path="res://.godot/imported/wizard_level_3.png-c7df15862a4edbe89139870faf732787.ctex"
+uid="uid://dd06cwa5ogg62"
+path="res://.godot/imported/archer_level_0.png-7fb16c19fc6fbad068a918d85be13510.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Towers/Wizard/wizard_level_3.png"
-dest_files=["res://.godot/imported/wizard_level_3.png-c7df15862a4edbe89139870faf732787.ctex"]
+source_file="res://assets/Towers/Archer/archer_level_0.png"
+dest_files=["res://.godot/imported/archer_level_0.png-7fb16c19fc6fbad068a918d85be13510.ctex"]
 
 [params]
 
