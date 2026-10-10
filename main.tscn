@@ -2,31 +2,477 @@
 
 [ext_resource type="PackedScene" uid="uid://bvbfiqybkool8" path="res://objects/groundBlock.tscn" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://lfs2yf05ig3s" path="res://objects/roadBlock.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://didstxgwid1dw" path="res://objects/archerTower.tscn" id="3_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://cwftwhga6n124" path="res://objects/wizardTower.tscn" id="4_lquwl"]
 
 [node name="Main" type="Node2D" unique_id=308983968]
+position = Vector2(-8, 0)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=329241016]
+zoom = Vector2(0.6, 0.6)
 
 [node name="Blocks" type="Node2D" parent="." unique_id=1458832009]
 
 [node name="GroundBlock" parent="Blocks" unique_id=2100741410 instance=ExtResource("1_0xm2m")]
-position = Vector2(123, -69)
+position = Vector2(-835, -494)
+
+[node name="GroundBlock3" parent="Blocks" unique_id=838449860 instance=ExtResource("1_0xm2m")]
+position = Vector2(-588, -494)
 
 [node name="GroundBlock2" parent="Blocks" unique_id=1624031091 instance=ExtResource("1_0xm2m")]
-position = Vector2(247, 2)
+position = Vector2(-711, -423)
+
+[node name="GroundBlock6" parent="Blocks" unique_id=851714296 instance=ExtResource("1_0xm2m")]
+position = Vector2(-336, -494)
+
+[node name="GroundBlock5" parent="Blocks" unique_id=988268919 instance=ExtResource("1_0xm2m")]
+position = Vector2(-459, -424)
+
+[node name="GroundBlock4" parent="Blocks" unique_id=690415751 instance=ExtResource("1_0xm2m")]
+position = Vector2(-584, -353)
+
+[node name="GroundBlock7" parent="Blocks" unique_id=1088329824 instance=ExtResource("1_0xm2m")]
+position = Vector2(-85, -495)
+
+[node name="GroundBlock12" parent="Blocks" unique_id=159433569 instance=ExtResource("1_0xm2m")]
+position = Vector2(415, -496)
+
+[node name="GroundBlock9" parent="Blocks" unique_id=14427141 instance=ExtResource("1_0xm2m")]
+position = Vector2(166, -496)
+
+[node name="GroundBlock8" parent="Blocks" unique_id=1194350186 instance=ExtResource("1_0xm2m")]
+position = Vector2(42, -425)
+
+[node name="GroundBlock16" parent="Blocks" unique_id=485971243 instance=ExtResource("1_0xm2m")]
+position = Vector2(911, -498)
+
+[node name="GroundBlock17" parent="Blocks" unique_id=2142553038 instance=ExtResource("1_0xm2m")]
+position = Vector2(664, -494)
+
+[node name="GroundBlock18" parent="Blocks" unique_id=487283140 instance=ExtResource("1_0xm2m")]
+position = Vector2(786, -426)
+
+[node name="GroundBlock19" parent="Blocks" unique_id=1071491070 instance=ExtResource("1_0xm2m")]
+position = Vector2(1033, -426)
+
+[node name="GroundBlock10" parent="Blocks" unique_id=303847326 instance=ExtResource("1_0xm2m")]
+position = Vector2(290, -424)
+
+[node name="GroundBlock11" parent="Blocks" unique_id=1080333468 instance=ExtResource("1_0xm2m")]
+position = Vector2(166, -353)
+
+[node name="GroundBlock13" parent="Blocks" unique_id=1037281142 instance=ExtResource("1_0xm2m")]
+position = Vector2(537, -424)
+
+[node name="GroundBlock14" parent="Blocks" unique_id=961587186 instance=ExtResource("1_0xm2m")]
+position = Vector2(414, -354)
+
+[node name="GroundBlock15" parent="Blocks" unique_id=811383783 instance=ExtResource("1_0xm2m")]
+position = Vector2(291, -284)
+
+[node name="GroundBlock20" parent="Blocks" unique_id=1795375934 instance=ExtResource("1_0xm2m")]
+position = Vector2(661, -354)
+
+[node name="GroundBlock21" parent="Blocks" unique_id=316450508 instance=ExtResource("1_0xm2m")]
+position = Vector2(909, -355)
+
+[node name="GroundBlock22" parent="Blocks" unique_id=1606086944 instance=ExtResource("1_0xm2m")]
+position = Vector2(786, -285)
+
+[node name="GroundBlock23" parent="Blocks" unique_id=765728254 instance=ExtResource("1_0xm2m")]
+position = Vector2(539, -284)
+
+[node name="GroundBlock24" parent="Blocks" unique_id=496807477 instance=ExtResource("1_0xm2m")]
+position = Vector2(414, -212)
+
+[node name="GroundBlock25" parent="Blocks" unique_id=1111283618 instance=ExtResource("1_0xm2m")]
+position = Vector2(661, -212)
+
+[node name="GroundBlock27" parent="Blocks" unique_id=279737365 instance=ExtResource("1_0xm2m")]
+position = Vector2(537, -141)
 
 [node name="RoadBlock" parent="Blocks" unique_id=1992821424 instance=ExtResource("1_ig7tw")]
+position = Vector2(-958, -425)
 
 [node name="RoadBlock2" parent="Blocks" unique_id=1825764632 instance=ExtResource("1_ig7tw")]
-position = Vector2(124, 72)
+position = Vector2(-834, -353)
+
+[node name="RoadBlock3" parent="Blocks" unique_id=1666768363 instance=ExtResource("1_ig7tw")]
+position = Vector2(-709, -282)
+
+[node name="RoadBlock4" parent="Blocks" unique_id=1570404446 instance=ExtResource("1_ig7tw")]
+position = Vector2(-211, -424)
+direction = 8
+
+[node name="RoadBlock5" parent="Blocks" unique_id=1940812122 instance=ExtResource("1_ig7tw")]
+position = Vector2(-334, -352)
+direction = 2
+
+[node name="RoadBlock6" parent="Blocks" unique_id=1355426969 instance=ExtResource("1_ig7tw")]
+position = Vector2(-458, -281)
+direction = 2
+
+[node name="RoadBlock7" parent="Blocks" unique_id=256284559 instance=ExtResource("1_ig7tw")]
+position = Vector2(-583, -210)
+direction = 9
+
+[node name="RoadBlock8" parent="Blocks" unique_id=617244016 instance=ExtResource("1_ig7tw")]
+position = Vector2(-84, -353)
+
+[node name="RoadBlock9" parent="Blocks" unique_id=1609663806 instance=ExtResource("1_ig7tw")]
+position = Vector2(42, -282)
+
+[node name="GroundBlock62" parent="Blocks" unique_id=706154803 instance=ExtResource("1_0xm2m")]
+position = Vector2(-202, -286)
+
+[node name="GroundBlock120" parent="Blocks" unique_id=807059302 instance=ExtResource("1_0xm2m")]
+position = Vector2(-1073, -355)
+
+[node name="GroundBlock121" parent="Blocks" unique_id=1406078744 instance=ExtResource("1_0xm2m")]
+position = Vector2(-950, -284)
+
+[node name="GroundBlock122" parent="Blocks" unique_id=1889561118 instance=ExtResource("1_0xm2m")]
+position = Vector2(-1198, -283)
+
+[node name="GroundBlock123" parent="Blocks" unique_id=326043342 instance=ExtResource("1_0xm2m")]
+position = Vector2(-1073, -214)
+
+[node name="GroundBlock124" parent="Blocks" unique_id=818469291 instance=ExtResource("1_0xm2m")]
+position = Vector2(-820, -218)
+
+[node name="GroundBlock125" parent="Blocks" unique_id=298957390 instance=ExtResource("1_0xm2m")]
+position = Vector2(-945, -146)
+
+[node name="GroundBlock126" parent="Blocks" unique_id=1839929023 instance=ExtResource("1_0xm2m")]
+position = Vector2(-698, -146)
+
+[node name="GroundBlock127" parent="Blocks" unique_id=1201585548 instance=ExtResource("1_0xm2m")]
+position = Vector2(-822, -75)
+
+[node name="GroundBlock63" parent="Blocks" unique_id=818797521 instance=ExtResource("1_0xm2m")]
+position = Vector2(-327, -214)
+
+[node name="GroundBlock64" parent="Blocks" unique_id=349199845 instance=ExtResource("1_0xm2m")]
+position = Vector2(-79, -215)
+
+[node name="GroundBlock65" parent="Blocks" unique_id=1633093778 instance=ExtResource("1_0xm2m")]
+position = Vector2(-202, -145)
+
+[node name="GroundBlock66" parent="Blocks" unique_id=2095511830 instance=ExtResource("1_0xm2m")]
+position = Vector2(-449, -144)
+
+[node name="GroundBlock67" parent="Blocks" unique_id=1670104861 instance=ExtResource("1_0xm2m")]
+position = Vector2(-574, -72)
+
+[node name="GroundBlock68" parent="Blocks" unique_id=92062693 instance=ExtResource("1_0xm2m")]
+position = Vector2(-327, -72)
+
+[node name="GroundBlock69" parent="Blocks" unique_id=1609028217 instance=ExtResource("1_0xm2m")]
+position = Vector2(-451, -1)
+
+[node name="GroundBlock128" parent="Blocks" unique_id=1490466677 instance=ExtResource("1_0xm2m")]
+position = Vector2(-1063, -78)
+
+[node name="GroundBlock129" parent="Blocks" unique_id=973432912 instance=ExtResource("1_0xm2m")]
+position = Vector2(-940, -3)
+
+[node name="GroundBlock130" parent="Blocks" unique_id=109493961 instance=ExtResource("1_0xm2m")]
+position = Vector2(-1061, 63)
+
+[node name="GroundBlock70" parent="Blocks" unique_id=548607901 instance=ExtResource("1_0xm2m")]
+position = Vector2(-699, 0)
+
+[node name="GroundBlock71" parent="Blocks" unique_id=163471936 instance=ExtResource("1_0xm2m")]
+position = Vector2(-574, 69)
+
+[node name="GroundBlock72" parent="Blocks" unique_id=2020139270 instance=ExtResource("1_0xm2m")]
+position = Vector2(-820, 66)
+
+[node name="GroundBlock73" parent="Blocks" unique_id=614035040 instance=ExtResource("1_0xm2m")]
+position = Vector2(-697, 137)
+
+[node name="GroundBlock74" parent="Blocks" unique_id=2124988007 instance=ExtResource("1_0xm2m")]
+position = Vector2(-945, 138)
+
+[node name="GroundBlock75" parent="Blocks" unique_id=1540026754 instance=ExtResource("1_0xm2m")]
+position = Vector2(-820, 207)
+
+[node name="RoadBlock10" parent="Blocks" unique_id=1801484144 instance=ExtResource("1_ig7tw")]
+position = Vector2(164, -212)
+direction = 11
+
+[node name="RoadBlock11" parent="Blocks" unique_id=2118888853 instance=ExtResource("1_ig7tw")]
+position = Vector2(43, -142)
+direction = 2
+
+[node name="RoadBlock12" parent="Blocks" unique_id=631622153 instance=ExtResource("1_ig7tw")]
+position = Vector2(-80, -73)
+direction = 2
+
+[node name="GroundBlock26" parent="Blocks" unique_id=496648640 instance=ExtResource("1_0xm2m")]
+position = Vector2(289, -140)
+
+[node name="GroundBlock28" parent="Blocks" unique_id=683150014 instance=ExtResource("1_0xm2m")]
+position = Vector2(414, -71)
+
+[node name="GroundBlock29" parent="Blocks" unique_id=1776129769 instance=ExtResource("1_0xm2m")]
+position = Vector2(168, -74)
+
+[node name="GroundBlock30" parent="Blocks" unique_id=1195927759 instance=ExtResource("1_0xm2m")]
+position = Vector2(291, -3)
+
+[node name="GroundBlock31" parent="Blocks" unique_id=1895198615 instance=ExtResource("1_0xm2m")]
+position = Vector2(43, -2)
+
+[node name="GroundBlock32" parent="Blocks" unique_id=1581379386 instance=ExtResource("1_0xm2m")]
+position = Vector2(168, 67)
+
+[node name="GroundBlock33" parent="Blocks" unique_id=1730473523 instance=ExtResource("1_0xm2m")]
+position = Vector2(1035, -286)
+
+[node name="GroundBlock34" parent="Blocks" unique_id=591493788 instance=ExtResource("1_0xm2m")]
+position = Vector2(912, -216)
+
+[node name="GroundBlock35" parent="Blocks" unique_id=1956502179 instance=ExtResource("1_0xm2m")]
+position = Vector2(787, -143)
+
+[node name="GroundBlock50" parent="Blocks" unique_id=2055732466 instance=ExtResource("1_0xm2m")]
+position = Vector2(1033, -146)
+
+[node name="GroundBlock36" parent="Blocks" unique_id=1908995131 instance=ExtResource("1_0xm2m")]
+position = Vector2(663, -72)
+
+[node name="GroundBlock37" parent="Blocks" unique_id=850982785 instance=ExtResource("1_0xm2m")]
+position = Vector2(540, -2)
+
+[node name="GroundBlock38" parent="Blocks" unique_id=1497544689 instance=ExtResource("1_0xm2m")]
+position = Vector2(417, 66)
+
+[node name="GroundBlock39" parent="Blocks" unique_id=2062445320 instance=ExtResource("1_0xm2m")]
+position = Vector2(294, 136)
+
+[node name="GroundBlock40" parent="Blocks" unique_id=1514790854 instance=ExtResource("1_0xm2m")]
+position = Vector2(911, -75)
+
+[node name="GroundBlock41" parent="Blocks" unique_id=885737488 instance=ExtResource("1_0xm2m")]
+position = Vector2(786, -3)
+
+[node name="GroundBlock42" parent="Blocks" unique_id=195949691 instance=ExtResource("1_0xm2m")]
+position = Vector2(1029, -4)
+
+[node name="GroundBlock43" parent="Blocks" unique_id=1896038091 instance=ExtResource("1_0xm2m")]
+position = Vector2(905, 67)
+
+[node name="GroundBlock44" parent="Blocks" unique_id=267313797 instance=ExtResource("1_0xm2m")]
+position = Vector2(661, 69)
+
+[node name="GroundBlock45" parent="Blocks" unique_id=2078620401 instance=ExtResource("1_0xm2m")]
+position = Vector2(782, 137)
+
+[node name="GroundBlock46" parent="Blocks" unique_id=1042297919 instance=ExtResource("1_0xm2m")]
+position = Vector2(540, 135)
+
+[node name="GroundBlock47" parent="Blocks" unique_id=1982425352 instance=ExtResource("1_0xm2m")]
+position = Vector2(659, 205)
+
+[node name="GroundBlock48" parent="Blocks" unique_id=1250052238 instance=ExtResource("1_0xm2m")]
+position = Vector2(415, 207)
+
+[node name="GroundBlock49" parent="Blocks" unique_id=663981914 instance=ExtResource("1_0xm2m")]
+position = Vector2(540, 278)
+
+[node name="GroundBlock51" parent="Blocks" unique_id=828545675 instance=ExtResource("1_0xm2m")]
+position = Vector2(1031, 136)
+
+[node name="GroundBlock52" parent="Blocks" unique_id=537601714 instance=ExtResource("1_0xm2m")]
+position = Vector2(908, 206)
+
+[node name="GroundBlock53" parent="Blocks" unique_id=2058938087 instance=ExtResource("1_0xm2m")]
+position = Vector2(785, 274)
+
+[node name="GroundBlock54" parent="Blocks" unique_id=454636542 instance=ExtResource("1_0xm2m")]
+position = Vector2(662, 344)
+
+[node name="RoadBlock13" parent="Blocks" unique_id=1672683846 instance=ExtResource("1_ig7tw")]
+position = Vector2(-202, -5)
+direction = 10
+
+[node name="RoadBlock14" parent="Blocks" unique_id=1340907868 instance=ExtResource("1_ig7tw")]
+position = Vector2(-76, 66)
+
+[node name="RoadBlock15" parent="Blocks" unique_id=1742478353 instance=ExtResource("1_ig7tw")]
+position = Vector2(46, 135)
+
+[node name="RoadBlock16" parent="Blocks" unique_id=1394203774 instance=ExtResource("1_ig7tw")]
+position = Vector2(171, 206)
+
+[node name="RoadBlock17" parent="Blocks" unique_id=1056508987 instance=ExtResource("1_ig7tw")]
+position = Vector2(293, 275)
+
+[node name="RoadBlock18" parent="Blocks" unique_id=6214517 instance=ExtResource("1_ig7tw")]
+position = Vector2(415, 344)
+
+[node name="RoadBlock19" parent="Blocks" unique_id=794633251 instance=ExtResource("1_ig7tw")]
+position = Vector2(540, 415)
+
+[node name="GroundBlock55" parent="Blocks" unique_id=1386532331 instance=ExtResource("1_0xm2m")]
+position = Vector2(1032, 275)
+
+[node name="GroundBlock56" parent="Blocks" unique_id=1795705617 instance=ExtResource("1_0xm2m")]
+position = Vector2(909, 343)
+
+[node name="GroundBlock57" parent="Blocks" unique_id=532858813 instance=ExtResource("1_0xm2m")]
+position = Vector2(786, 413)
+
+[node name="RoadBlock22" parent="Blocks" unique_id=1370020615 instance=ExtResource("1_ig7tw")]
+position = Vector2(664, 484)
+
+[node name="GroundBlock58" parent="Blocks" unique_id=1490598322 instance=ExtResource("1_0xm2m")]
+position = Vector2(1031, 412)
+
+[node name="GroundBlock59" parent="Blocks" unique_id=1029503827 instance=ExtResource("1_0xm2m")]
+position = Vector2(908, 482)
+
+[node name="RoadBlock23" parent="Blocks" unique_id=1918358441 instance=ExtResource("1_ig7tw")]
+position = Vector2(786, 553)
+
+[node name="GroundBlock60" parent="Blocks" unique_id=5776303 instance=ExtResource("1_0xm2m")]
+position = Vector2(1154, 482)
+
+[node name="GroundBlock61" parent="Blocks" unique_id=819275114 instance=ExtResource("1_0xm2m")]
+position = Vector2(1031, 552)
+
+[node name="RoadBlock24" parent="Blocks" unique_id=592063316 instance=ExtResource("1_ig7tw")]
+position = Vector2(909, 623)
+
+[node name="GroundBlock76" parent="Blocks" unique_id=1554083562 instance=ExtResource("1_0xm2m")]
+position = Vector2(-321, 65)
+
+[node name="GroundBlock77" parent="Blocks" unique_id=1875733612 instance=ExtResource("1_0xm2m")]
+position = Vector2(-446, 137)
+
+[node name="GroundBlock78" parent="Blocks" unique_id=9716812 instance=ExtResource("1_0xm2m")]
+position = Vector2(-199, 137)
+
+[node name="GroundBlock79" parent="Blocks" unique_id=1991808840 instance=ExtResource("1_0xm2m")]
+position = Vector2(-323, 208)
+
+[node name="GroundBlock80" parent="Blocks" unique_id=1778927551 instance=ExtResource("1_0xm2m")]
+position = Vector2(-571, 209)
+
+[node name="GroundBlock111" parent="Blocks" unique_id=1882186215 instance=ExtResource("1_0xm2m")]
+position = Vector2(-1066, 206)
+
+[node name="GroundBlock112" parent="Blocks" unique_id=207221223 instance=ExtResource("1_0xm2m")]
+position = Vector2(-941, 275)
+
+[node name="GroundBlock81" parent="Blocks" unique_id=1497532916 instance=ExtResource("1_0xm2m")]
+position = Vector2(-446, 278)
+
+[node name="GroundBlock82" parent="Blocks" unique_id=661626851 instance=ExtResource("1_0xm2m")]
+position = Vector2(-692, 275)
+
+[node name="GroundBlock83" parent="Blocks" unique_id=277824812 instance=ExtResource("1_0xm2m")]
+position = Vector2(-569, 346)
+
+[node name="GroundBlock84" parent="Blocks" unique_id=395347160 instance=ExtResource("1_0xm2m")]
+position = Vector2(-817, 347)
+
+[node name="GroundBlock85" parent="Blocks" unique_id=964650827 instance=ExtResource("1_0xm2m")]
+position = Vector2(-692, 416)
+
+[node name="GroundBlock86" parent="Blocks" unique_id=176232449 instance=ExtResource("1_0xm2m")]
+position = Vector2(-73, 206)
+
+[node name="GroundBlock87" parent="Blocks" unique_id=974847448 instance=ExtResource("1_0xm2m")]
+position = Vector2(-197, 277)
+
+[node name="GroundBlock88" parent="Blocks" unique_id=941615330 instance=ExtResource("1_0xm2m")]
+position = Vector2(-320, 347)
+
+[node name="GroundBlock89" parent="Blocks" unique_id=319437402 instance=ExtResource("1_0xm2m")]
+position = Vector2(-443, 415)
+
+[node name="GroundBlock90" parent="Blocks" unique_id=2057786165 instance=ExtResource("1_0xm2m")]
+position = Vector2(-566, 485)
+
+[node name="GroundBlock113" parent="Blocks" unique_id=1018218784 instance=ExtResource("1_0xm2m")]
+position = Vector2(-941, 418)
+
+[node name="GroundBlock114" parent="Blocks" unique_id=342282786 instance=ExtResource("1_0xm2m")]
+position = Vector2(-816, 487)
+
+[node name="GroundBlock115" parent="Blocks" unique_id=328939508 instance=ExtResource("1_0xm2m")]
+position = Vector2(-690, 556)
+
+[node name="GroundBlock91" parent="Blocks" unique_id=554186100 instance=ExtResource("1_0xm2m")]
+position = Vector2(51, 274)
+
+[node name="GroundBlock92" parent="Blocks" unique_id=1720118640 instance=ExtResource("1_0xm2m")]
+position = Vector2(-74, 346)
+
+[node name="GroundBlock93" parent="Blocks" unique_id=658244050 instance=ExtResource("1_0xm2m")]
+position = Vector2(169, 345)
+
+[node name="GroundBlock94" parent="Blocks" unique_id=288983875 instance=ExtResource("1_0xm2m")]
+position = Vector2(45, 416)
+
+[node name="GroundBlock95" parent="Blocks" unique_id=1448584054 instance=ExtResource("1_0xm2m")]
+position = Vector2(-199, 418)
+
+[node name="GroundBlock101" parent="Blocks" unique_id=1602971775 instance=ExtResource("1_0xm2m")]
+position = Vector2(296, 413)
+
+[node name="GroundBlock102" parent="Blocks" unique_id=860498348 instance=ExtResource("1_0xm2m")]
+position = Vector2(171, 485)
+
+[node name="GroundBlock103" parent="Blocks" unique_id=1270404855 instance=ExtResource("1_0xm2m")]
+position = Vector2(414, 484)
+
+[node name="GroundBlock104" parent="Blocks" unique_id=2093940236 instance=ExtResource("1_0xm2m")]
+position = Vector2(290, 555)
+
+[node name="GroundBlock96" parent="Blocks" unique_id=8003770 instance=ExtResource("1_0xm2m")]
+position = Vector2(-78, 486)
+
+[node name="GroundBlock97" parent="Blocks" unique_id=851553354 instance=ExtResource("1_0xm2m")]
+position = Vector2(-320, 484)
+
+[node name="GroundBlock98" parent="Blocks" unique_id=452484510 instance=ExtResource("1_0xm2m")]
+position = Vector2(-201, 554)
+
+[node name="GroundBlock99" parent="Blocks" unique_id=1296504510 instance=ExtResource("1_0xm2m")]
+position = Vector2(-445, 556)
+
+[node name="GroundBlock116" parent="Blocks" unique_id=1470222519 instance=ExtResource("1_0xm2m")]
+position = Vector2(-1058, 485)
+
+[node name="GroundBlock117" parent="Blocks" unique_id=1499339222 instance=ExtResource("1_0xm2m")]
+position = Vector2(-933, 554)
+
+[node name="GroundBlock118" parent="Blocks" unique_id=864211672 instance=ExtResource("1_0xm2m")]
+position = Vector2(-807, 623)
+
+[node name="GroundBlock119" parent="Blocks" unique_id=1678093293 instance=ExtResource("1_0xm2m")]
+position = Vector2(-562, 623)
+
+[node name="GroundBlock100" parent="Blocks" unique_id=653853728 instance=ExtResource("1_0xm2m")]
+position = Vector2(-320, 627)
+
+[node name="GroundBlock105" parent="Blocks" unique_id=1626229663 instance=ExtResource("1_0xm2m")]
+position = Vector2(46, 557)
+
+[node name="GroundBlock106" parent="Blocks" unique_id=731283657 instance=ExtResource("1_0xm2m")]
+position = Vector2(540, 554)
+
+[node name="GroundBlock107" parent="Blocks" unique_id=1608043471 instance=ExtResource("1_0xm2m")]
+position = Vector2(-80, 625)
+
+[node name="GroundBlock108" parent="Blocks" unique_id=2146230362 instance=ExtResource("1_0xm2m")]
+position = Vector2(167, 628)
+
+[node name="GroundBlock109" parent="Blocks" unique_id=889045154 instance=ExtResource("1_0xm2m")]
+position = Vector2(415, 621)
+
+[node name="GroundBlock110" parent="Blocks" unique_id=822000439 instance=ExtResource("1_0xm2m")]
+position = Vector2(663, 626)
 
 [node name="Towers" type="Node2D" parent="." unique_id=1086228106]
-
-[node name="ArcherTower" parent="Towers" unique_id=1035109298 instance=ExtResource("3_1bvp3")]
-position = Vector2(118, -149)
-level = 2
-
-[node name="WizardTower" parent="Towers" unique_id=858212529 instance=ExtResource("4_lquwl")]
-position = Vector2(250, -52)

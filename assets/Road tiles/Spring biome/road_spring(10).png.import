@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp551f6nym3ic"
-path="res://.godot/imported/road_spring(12).png-ae9869b8ff09d1d9bbea77c00e0f8a45.ctex"
+uid="uid://c6dc4r0ymi2ok"
+path="res://.godot/imported/road_spring(10).png-0d894c4956cb5736288e85f821ccf09e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Road tiles/Spring biome/road_spring(12).png"
-dest_files=["res://.godot/imported/road_spring(12).png-ae9869b8ff09d1d9bbea77c00e0f8a45.ctex"]
+source_file="res://assets/Road tiles/Spring biome/road_spring(10).png"
+dest_files=["res://.godot/imported/road_spring(10).png-0d894c4956cb5736288e85f821ccf09e.ctex"]
 
 [params]
 
