@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cgyyxqswf61bm" path="res://scripts/levelManager.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://lfs2yf05ig3s" path="res://objects/roadBlock.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://cf1vif2xk6q2d" path="res://objects/ufo.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://fmaosbmsf1p2" path="res://objects/UI.tscn" id="5_lquwl"]
 
 [sub_resource type="Curve2D" id="Curve2D_0xm2m"]
 _data = {
@@ -624,5 +625,7 @@ curve = SubResource("Curve2D_0xm2m")
 [node name="Timer" type="Timer" parent="." unique_id=1194743426]
 wait_time = 2.5
 autostart = true
+
+[node name="UI" parent="." unique_id=1629065484 instance=ExtResource("5_lquwl")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

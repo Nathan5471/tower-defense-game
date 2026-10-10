@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://fmaosbmsf1p2"]
+
+[ext_resource type="Script" uid="uid://nmxavc0kjdd1" path="res://scripts/UIManager.gd" id="1_8rm5b"]
+[ext_resource type="Texture2D" uid="uid://c0526he80hsc2" path="res://assets/heart.png" id="1_273ve"]
+[ext_resource type="Texture2D" uid="uid://bv5s1xwqejk18" path="res://assets/coin.png" id="2_5hsh8"]
+[ext_resource type="FontFile" uid="uid://p2npfcjktcu4" path="res://assets/Unkempt-Bold.ttf" id="3_8rm5b"]
+
+[node name="UI" type="Node2D" unique_id=1629065484]
+script = ExtResource("1_8rm5b")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1006787149]
+zoom = Vector2(0.6, 0.6)
+
+[node name="Heart1" type="Sprite2D" parent="." unique_id=928143988]
+position = Vector2(-923.5001, -511.50003)
+scale = Vector2(0.17812477, 0.17812477)
+texture = ExtResource("1_273ve")
+
+[node name="Heart2" type="Sprite2D" parent="." unique_id=99655417]
+position = Vector2(-867.50006, -511.50003)
+scale = Vector2(0.17812477, 0.17812477)
+texture = ExtResource("1_273ve")
+
+[node name="Heart3" type="Sprite2D" parent="." unique_id=46815300]
+position = Vector2(-811.50006, -511.50003)
+scale = Vector2(0.17812477, 0.17812477)
+texture = ExtResource("1_273ve")
+
+[node name="Heart4" type="Sprite2D" parent="." unique_id=1077562102]
+position = Vector2(-755.5002, -511.50003)
+scale = Vector2(0.17812477, 0.17812477)
+texture = ExtResource("1_273ve")
+
+[node name="Heart5" type="Sprite2D" parent="." unique_id=2034386435]
+position = Vector2(-699.5001, -511.50003)
+scale = Vector2(0.17812477, 0.17812477)
+texture = ExtResource("1_273ve")
+
+[node name="Coin" type="Sprite2D" parent="." unique_id=1309616281]
+position = Vector2(-608, -513)
+scale = Vector2(0.087890625, 0.087890625)
+texture = ExtResource("2_5hsh8")
+
+[node name="CoinAmount" type="Label" parent="." unique_id=1399010845]
+offset_left = -575.0
+offset_top = -553.0
+offset_right = -406.0
+offset_bottom = -475.0
+theme_override_fonts/font = ExtResource("3_8rm5b")
+theme_override_font_sizes/font_size = 64
+text = "250"
