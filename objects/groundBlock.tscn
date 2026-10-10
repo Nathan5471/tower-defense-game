@@ -5,6 +5,7 @@
 
 [node name="GroundBlock" type="Area2D" unique_id=2100741410]
 script = ExtResource("1_exr44")
+canPlace = null
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2100483433]
 texture = ExtResource("1_7nadc")

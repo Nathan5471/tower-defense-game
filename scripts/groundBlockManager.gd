@@ -5,6 +5,7 @@ extends Area2D
 	set(value):
 		type = value
 		updateGroundSprite()
+@export var canPlace: bool = true
 @onready var sprite = $Sprite2D
 
 func _ready() -> void:
