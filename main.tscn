@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://giae87vnc2yq"]
 
 [ext_resource type="PackedScene" uid="uid://bvbfiqybkool8" path="res://objects/groundBlock.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://cgyyxqswf61bm" path="res://scripts/levelManager.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://lfs2yf05ig3s" path="res://objects/roadBlock.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cf1vif2xk6q2d" path="res://objects/ufo.tscn" id="2_1bvp3"]
 
 [sub_resource type="Curve2D" id="Curve2D_0xm2m"]
 _data = {
@@ -10,6 +12,8 @@ _data = {
 point_count = 6
 
 [node name="Main" type="Node2D" unique_id=308983968]
+script = ExtResource("1_h2yge")
+ufoScene = ExtResource("2_1bvp3")
 
 [node name="Blocks" type="Node2D" parent="." unique_id=1458832009]
 
@@ -614,5 +618,11 @@ canPlace = false
 [node name="Camera2D" type="Camera2D" parent="." unique_id=329241016]
 zoom = Vector2(0.6, 0.6)
 
-[node name="Path2D" type="Path2D" parent="." unique_id=546700371]
+[node name="UFOPath" type="Path2D" parent="." unique_id=546700371]
 curve = SubResource("Curve2D_0xm2m")
+
+[node name="Timer" type="Timer" parent="." unique_id=1194743426]
+wait_time = 2.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
