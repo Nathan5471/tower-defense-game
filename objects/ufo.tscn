@@ -9,6 +9,7 @@ height = 86.0
 
 [node name="Ufo" type="PathFollow2D" unique_id=1137948765]
 rotates = false
+loop = false
 script = ExtResource("1_gnper")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1460168949]
