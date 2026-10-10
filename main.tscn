@@ -3,8 +3,13 @@
 [ext_resource type="PackedScene" uid="uid://bvbfiqybkool8" path="res://objects/groundBlock.tscn" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://lfs2yf05ig3s" path="res://objects/roadBlock.tscn" id="1_ig7tw"]
 
+[sub_resource type="Curve2D" id="Curve2D_0xm2m"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -1010, -503, 0, 0, 0, 0, -584, -254, 0, 0, 0, 0, -211, -467, 0, 0, 0, 0, 152, -260, 0, 0, 0, 0, -194, -47, 0, 0, 0, 0, 968, 614)
+}
+point_count = 6
+
 [node name="Main" type="Node2D" unique_id=308983968]
-position = Vector2(-8, 0)
 
 [node name="Blocks" type="Node2D" parent="." unique_id=1458832009]
 
@@ -454,6 +459,10 @@ canPlace = false
 position = Vector2(-941, 275)
 canPlace = false
 
+[node name="GroundBlock131" parent="Blocks" unique_id=475480688 instance=ExtResource("1_0xm2m")]
+position = Vector2(-1058, 349)
+canPlace = false
+
 [node name="GroundBlock81" parent="Blocks" unique_id=1497532916 instance=ExtResource("1_0xm2m")]
 position = Vector2(-446, 278)
 canPlace = true
@@ -602,7 +611,8 @@ canPlace = false
 position = Vector2(663, 626)
 canPlace = false
 
-[node name="Towers" type="Node2D" parent="." unique_id=1086228106]
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=329241016]
 zoom = Vector2(0.6, 0.6)
+
+[node name="Path2D" type="Path2D" parent="." unique_id=546700371]
+curve = SubResource("Curve2D_0xm2m")
