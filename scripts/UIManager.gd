@@ -34,3 +34,28 @@ func _on_open_shop_pressed() -> void:
 func _on_close_shop_pressed() -> void:
 	shop.visible = false
 	openShopButton.visible = true
+
+func handleMakePurchase(type: String) -> void:
+	var levelManager = get_parent()
+	var newCoins = levelManager.handlePurchase(type, 200 if (type == "archer") else 500)
+	if (newCoins != -1):
+		coins = newCoins
+		coinAmountLabel.text = str(coins)
+		buyArcherButton.disabled = true
+		buyWizardButton.disabled = true
+
+func finishPurchase() -> void:
+	if (coins < 200):
+		buyArcherButton.disabled = true
+	else:
+		buyArcherButton.disabled = false
+	if (coins < 500):
+		buyWizardButton.disabled = true
+	else:
+		buyWizardButton.disabled = false
+
+func _on_buy_archer_pressed() -> void:
+	handleMakePurchase("archer")
+
+func _on_buy_wizard_pressed() -> void:
+	handleMakePurchase("wizard")

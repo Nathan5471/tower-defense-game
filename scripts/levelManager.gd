@@ -2,6 +2,7 @@ extends Node2D
 
 var health: int = 5
 var coins: int = 250
+var currentPurchase: String = "none"
 @export var ufoScene: PackedScene 
 @onready var path = $UFOPath
 @onready var timer = $Timer
@@ -25,3 +26,10 @@ func deductHealth() -> void:
 func addCoins(amount: int) -> void:
 	coins += amount
 	ui.setCoins(coins)
+
+func handlePurchase(type: String, cost: int) -> int:
+	if (cost > coins || currentPurchase != "none"):
+		return -1
+	currentPurchase = type
+	coins -= cost
+	return coins
