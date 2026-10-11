@@ -1,7 +1,8 @@
 extends Area2D
 
 @export_range(0, 2) var level: int = 0
-@export var projectileSpeed: int = 450
+@export var projectileSpeed: int = 600
+@export var projectileDamage: int = 5
 @export var projectileScene: PackedScene
 var disabled: bool = false
 @onready var sprite = $Sprite2D
@@ -38,6 +39,8 @@ func _on_detection_area_area_exited(area: Area2D) -> void:
 		detectedEnemies.erase(parent)
 
 func _process(delta: float) -> void:
+	if disabled:
+		return
 	detectedEnemies = detectedEnemies.filter(func(enemy): return is_instance_valid(enemy))
 	timeSinceLastShot += delta
 	if (detectedEnemies.size() > 0 && timeSinceLastShot > 1.0):
@@ -49,4 +52,4 @@ func fireAtEnemy(target: PathFollow2D):
 	var projectile = projectileScene.instantiate()
 	get_tree().current_scene.add_child(projectile)
 	projectile.global_position = global_position
-	projectile.startProjectile(target, projectileSpeed)
+	projectile.startProjectile(target, projectileSpeed, projectileDamage)
