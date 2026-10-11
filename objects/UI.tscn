@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bagas1xkg7l3m" path="res://assets/cart.png" id="5_wmr64"]
 [ext_resource type="Texture2D" uid="uid://dd06cwa5ogg62" path="res://assets/Towers/Archer/archer_level_0.png" id="6_nqmbn"]
 [ext_resource type="Texture2D" uid="uid://cvwlrlf712fc4" path="res://assets/Towers/Wizard/wizard_level_0.png" id="7_730kw"]
+[ext_resource type="Texture2D" uid="uid://supb1qfycqqa" path="res://assets/Towers/Wizard/wizard_level_1.png" id="8_irl0d"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nqmbn"]
 bg_color = Color(1, 0.98039216, 0.9411765, 1)
@@ -125,7 +126,72 @@ $550
 "
 icon = ExtResource("7_730kw")
 
+[node name="UpgradeMenu" type="ColorRect" parent="." unique_id=98950317]
+offset_left = 637.0
+offset_top = -516.0
+offset_right = 939.0
+offset_bottom = 504.0
+color = Color(0.87058824, 0.72156864, 0.5294118, 1)
+
+[node name="CloseMenu" type="Button" parent="UpgradeMenu" unique_id=570194876]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 7.0
+offset_right = 295.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("3_8rm5b")
+theme_override_font_sizes/font_size = 32
+text = "X"
+
+[node name="CurrentSprite" type="Sprite2D" parent="UpgradeMenu" unique_id=565833008]
+position = Vector2(156, 185)
+scale = Vector2(1.2923077, 1.2923076)
+texture = ExtResource("6_nqmbn")
+
+[node name="UpgradeInfo" type="Label" parent="UpgradeMenu" unique_id=1113380378]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 309.0
+offset_right = 298.0
+offset_bottom = 352.0
+theme_override_fonts/font = ExtResource("3_8rm5b")
+theme_override_font_sizes/font_size = 32
+text = "Archer Tower (1)
+1 shot/s | 5 damage"
+horizontal_alignment = 1
+
+[node name="BuyUpgrade" type="Button" parent="UpgradeMenu" unique_id=1528813912]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 421.0
+offset_right = 626.0
+offset_bottom = 741.0
+scale = Vector2(0.45, 0.45)
+theme_override_fonts/font = ExtResource("3_8rm5b")
+theme_override_font_sizes/font_size = 52
+disabled = true
+text = "Buy Upgrade
+15 damage
+2.5 shot per second
+$500
+
+"
+icon = ExtResource("8_irl0d")
+
+[node name="SellTower" type="Button" parent="UpgradeMenu" unique_id=403716995]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 573.0
+offset_right = 626.0
+offset_bottom = 741.8889
+scale = Vector2(0.45, 0.45)
+theme_override_fonts/font = ExtResource("3_8rm5b")
+theme_override_font_sizes/font_size = 74
+text = "Sell Tower
+$100"
+
 [connection signal="pressed" from="OpenShop" to="." method="_on_open_shop_pressed"]
 [connection signal="pressed" from="Shop/CloseShop" to="." method="_on_close_shop_pressed"]
 [connection signal="pressed" from="Shop/BuyArcher" to="." method="_on_buy_archer_pressed"]
 [connection signal="pressed" from="Shop/BuyWizard" to="." method="_on_buy_wizard_pressed"]
+[connection signal="pressed" from="UpgradeMenu/CloseMenu" to="." method="_on_close_menu_pressed"]
