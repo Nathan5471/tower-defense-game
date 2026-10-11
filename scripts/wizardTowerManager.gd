@@ -19,3 +19,6 @@ func showDetectionOverlay() -> void:
 
 func disable() -> void:
 	disabled = true
+
+func enable() -> void:
+	disabled = false

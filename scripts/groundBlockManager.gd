@@ -40,7 +40,12 @@ func _on_mouse_entered() -> void:
 			tower.showDetectionOverlay()
 
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
-	pass # Replace with function body.
+	if (tower && canPlace && event is InputEventMouseButton && event.pressed && event.button_index == MOUSE_BUTTON_LEFT):
+		canPlace = false
+		tower.enable()
+		tower.hideDetectionOverlay()
+		var levelManager = get_parent().get_parent()
+		levelManager.finishPurchase()
 
 func _on_mouse_exited() -> void:
 	if (tower && tower.disabled == true):

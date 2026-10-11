@@ -1,7 +1,7 @@
 extends Node2D
 
 var health: int = 5
-var coins: int = 650
+var coins: int = 8500
 var currentPurchase: String = "none"
 @export var ufoScene: PackedScene 
 @onready var path = $UFOPath
@@ -33,3 +33,7 @@ func handlePurchase(type: String, cost: int) -> int:
 	currentPurchase = type
 	coins -= cost
 	return coins
+
+func finishPurchase() -> void:
+	currentPurchase = "none"
+	ui.finishPurchase()
