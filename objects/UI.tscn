@@ -4,12 +4,21 @@
 [ext_resource type="Texture2D" uid="uid://c0526he80hsc2" path="res://assets/heart.png" id="1_273ve"]
 [ext_resource type="Texture2D" uid="uid://bv5s1xwqejk18" path="res://assets/coin.png" id="2_5hsh8"]
 [ext_resource type="FontFile" uid="uid://p2npfcjktcu4" path="res://assets/Unkempt-Bold.ttf" id="3_8rm5b"]
+[ext_resource type="Texture2D" uid="uid://bagas1xkg7l3m" path="res://assets/cart.png" id="5_wmr64"]
+[ext_resource type="Texture2D" uid="uid://dd06cwa5ogg62" path="res://assets/Towers/Archer/archer_level_0.png" id="6_nqmbn"]
+[ext_resource type="Texture2D" uid="uid://cvwlrlf712fc4" path="res://assets/Towers/Wizard/wizard_level_0.png" id="7_730kw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nqmbn"]
+bg_color = Color(1, 0.98039216, 0.9411765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_730kw"]
+bg_color = Color(0.81960785, 0.8039216, 0.77254903, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_irl0d"]
+bg_color = Color(0.9098039, 0.89411765, 0.85490197, 1)
 
 [node name="UI" type="Node2D" unique_id=1629065484]
 script = ExtResource("1_8rm5b")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1006787149]
-zoom = Vector2(0.6, 0.6)
 
 [node name="Heart1" type="Sprite2D" parent="." unique_id=928143988]
 position = Vector2(-923.5001, -511.50003)
@@ -49,3 +58,71 @@ offset_bottom = -475.0
 theme_override_fonts/font = ExtResource("3_8rm5b")
 theme_override_font_sizes/font_size = 64
 text = "250"
+
+[node name="OpenShop" type="Button" parent="." unique_id=1549477613]
+offset_left = 870.0
+offset_top = -532.0
+offset_right = 1390.0
+offset_bottom = -12.0
+scale = Vector2(0.15, 0.15)
+theme_override_styles/normal = SubResource("StyleBoxFlat_nqmbn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_730kw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_irl0d")
+icon = ExtResource("5_wmr64")
+
+[node name="Shop" type="ColorRect" parent="." unique_id=2098480016]
+visible = false
+offset_left = 637.0
+offset_top = -516.0
+offset_right = 939.0
+offset_bottom = 504.0
+color = Color(0.87058824, 0.72156864, 0.5294118, 1)
+
+[node name="CloseShop" type="Button" parent="Shop" unique_id=797399680]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 7.0
+offset_right = 295.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("3_8rm5b")
+theme_override_font_sizes/font_size = 32
+text = "X"
+
+[node name="BuyArcher" type="Button" parent="Shop" unique_id=391099301]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 77.0
+offset_right = 623.0
+offset_bottom = 397.0
+scale = Vector2(0.45, 0.45)
+theme_override_fonts/font = ExtResource("3_8rm5b")
+theme_override_font_sizes/font_size = 64
+disabled = true
+text = "Archer Tower
+5 damage
+1 shot per second
+$200
+
+"
+icon = ExtResource("6_nqmbn")
+
+[node name="BuyWizard" type="Button" parent="Shop" unique_id=152163415]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 238.0
+offset_right = 657.0
+offset_bottom = 558.0
+scale = Vector2(0.426, 0.426)
+theme_override_fonts/font = ExtResource("3_8rm5b")
+theme_override_font_sizes/font_size = 64
+disabled = true
+text = "Wizard Tower
+10 damage
+2 shot per second
+$550
+
+"
+icon = ExtResource("7_730kw")
+
+[connection signal="pressed" from="OpenShop" to="." method="_on_open_shop_pressed"]
+[connection signal="pressed" from="Shop/CloseShop" to="." method="_on_close_shop_pressed"]

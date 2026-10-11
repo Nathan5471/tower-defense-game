@@ -617,7 +617,7 @@ position = Vector2(663, 626)
 canPlace = false
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=329241016]
-zoom = Vector2(0.6, 0.6)
+zoom = Vector2(0.73, 0.73)
 
 [node name="UFOPath" type="Path2D" parent="." unique_id=546700371]
 curve = SubResource("Curve2D_0xm2m")
