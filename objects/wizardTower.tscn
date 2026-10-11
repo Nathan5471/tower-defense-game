@@ -3,11 +3,37 @@
 [ext_resource type="Script" uid="uid://cybw4vld21ikk" path="res://scripts/wizardTowerManager.gd" id="1_0arkp"]
 [ext_resource type="Texture2D" uid="uid://cvwlrlf712fc4" path="res://assets/Towers/Wizard/wizard_level_0.png" id="1_56grm"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_0arkp"]
+radius = 434.33282
+
+[sub_resource type="Gradient" id="Gradient_gqpgd"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.712)
+colors = PackedColorArray(0.29411766, 0.30588236, 0.3254902, 0.7647059, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oifeh"]
+gradient = SubResource("Gradient_gqpgd")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 1)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_sik88"]
 radius = 65.00769
 
 [node name="WizardTower" type="Area2D" unique_id=858212529]
+z_index = 1
 script = ExtResource("1_0arkp")
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=690597618]
+
+[node name="DetectionRange" type="CollisionShape2D" parent="DetectionArea" unique_id=282776012]
+shape = SubResource("CircleShape2D_0arkp")
+
+[node name="DetectionOverlay" type="Sprite2D" parent="DetectionArea" unique_id=545744809]
+visible = false
+position = Vector2(0.49999678, 2.4999619)
+scale = Vector2(13.734375, 13.734374)
+texture = SubResource("GradientTexture2D_oifeh")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=352473211]
 texture = ExtResource("1_56grm")

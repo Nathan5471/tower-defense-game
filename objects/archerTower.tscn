@@ -3,8 +3,33 @@
 [ext_resource type="Script" uid="uid://q2t0jq2tqrqf" path="res://scripts/archerTowerManager.gd" id="1_21tbo"]
 [ext_resource type="Texture2D" uid="uid://dd06cwa5ogg62" path="res://assets/Towers/Archer/archer_level_0.png" id="1_foxna"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_gqpgd"]
+radius = 196.25494
+
+[sub_resource type="Gradient" id="Gradient_gqpgd"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.712)
+colors = PackedColorArray(0.29411766, 0.30588236, 0.3254902, 0.7647059, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_sik88"]
+gradient = SubResource("Gradient_gqpgd")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 1)
+
 [node name="ArcherTower" type="Area2D" unique_id=1035109298]
+z_index = 1
 script = ExtResource("1_21tbo")
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=628627286]
+
+[node name="DetectionRange" type="CollisionShape2D" parent="DetectionArea" unique_id=1276076555]
+shape = SubResource("CircleShape2D_gqpgd")
+
+[node name="DetectionOverlay" type="Sprite2D" parent="DetectionArea" unique_id=1824170454]
+visible = false
+scale = Vector2(6.296875, 6.421875)
+texture = SubResource("GradientTexture2D_sik88")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=424827157]
 texture = ExtResource("1_foxna")
