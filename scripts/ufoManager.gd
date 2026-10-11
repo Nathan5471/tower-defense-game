@@ -31,6 +31,6 @@ func handleReachEnd() -> void:
 	queue_free()
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	if area.name == "ArrowProjectile":
+	if area.name == "ArrowProjectile" || area.name == "WizardProjectile":
 		handleTakeDamage(area.damage)
 		area.queue_free()

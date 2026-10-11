@@ -1,13 +1,16 @@
 [gd_scene format=3 uid="uid://cyp8r2q6mk4vf"]
 
 [ext_resource type="Texture2D" uid="uid://b4x8okb6dhr6w" path="res://assets/Towers/Wizard/wizard_bullet.png" id="1_6u53t"]
+[ext_resource type="Script" uid="uid://drc4vbjwmb550" path="res://scripts/projectileManager.gd" id="1_ojcuq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sik88"]
 radius = 8.062258
 
 [node name="WizardProjectile" type="Area2D" unique_id=1818264349]
+script = ExtResource("1_ojcuq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=943614665]
+scale = Vector2(2, 2)
 texture = ExtResource("1_6u53t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1686077301]

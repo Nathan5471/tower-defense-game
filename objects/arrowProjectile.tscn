@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dss50uv6beg15"]
 
 [ext_resource type="Texture2D" uid="uid://dxed23ofir6x6" path="res://assets/Towers/Archer/arrow.png" id="1_0a6pm"]
-[ext_resource type="Script" uid="uid://drc4vbjwmb550" path="res://objects/projectileManager.gd" id="1_fxuop"]
+[ext_resource type="Script" uid="uid://drc4vbjwmb550" path="res://scripts/projectileManager.gd" id="1_fxuop"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sik88"]
 radius = 12.0

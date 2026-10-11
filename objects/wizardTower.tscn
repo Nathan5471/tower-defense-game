@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cybw4vld21ikk" path="res://scripts/wizardTowerManager.gd" id="1_0arkp"]
 [ext_resource type="Texture2D" uid="uid://cvwlrlf712fc4" path="res://assets/Towers/Wizard/wizard_level_0.png" id="1_56grm"]
+[ext_resource type="PackedScene" uid="uid://cyp8r2q6mk4vf" path="res://objects/wizardProjectile.tscn" id="2_oifeh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0arkp"]
 radius = 434.33282
@@ -23,6 +24,7 @@ radius = 65.00769
 [node name="WizardTower" type="Area2D" unique_id=858212529]
 z_index = 1
 script = ExtResource("1_0arkp")
+projectileScene = ExtResource("2_oifeh")
 
 [node name="DetectionArea" type="Area2D" parent="." unique_id=690597618]
 
@@ -40,3 +42,6 @@ texture = ExtResource("1_56grm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=318011908]
 shape = SubResource("CircleShape2D_sik88")
+
+[connection signal="area_entered" from="DetectionArea" to="." method="_on_detection_area_area_entered"]
+[connection signal="area_exited" from="DetectionArea" to="." method="_on_detection_area_area_exited"]
