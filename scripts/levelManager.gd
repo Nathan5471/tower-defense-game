@@ -1,7 +1,7 @@
 extends Node2D
 
 var health: int = 5
-var coins: int = 8500
+var coins: int = 250
 var currentPurchase: String = "none"
 @export var ufoScene: PackedScene 
 @onready var path = $UFOPath

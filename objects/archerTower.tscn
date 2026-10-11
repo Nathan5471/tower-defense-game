@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://q2t0jq2tqrqf" path="res://scripts/archerTowerManager.gd" id="1_21tbo"]
 [ext_resource type="Texture2D" uid="uid://dd06cwa5ogg62" path="res://assets/Towers/Archer/archer_level_0.png" id="1_foxna"]
+[ext_resource type="PackedScene" uid="uid://dss50uv6beg15" path="res://objects/arrowProjectile.tscn" id="2_pxgdo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gqpgd"]
 radius = 196.25494
@@ -20,6 +21,7 @@ fill_to = Vector2(1, 1)
 [node name="ArcherTower" type="Area2D" unique_id=1035109298]
 z_index = 1
 script = ExtResource("1_21tbo")
+projectileScene = ExtResource("2_pxgdo")
 
 [node name="DetectionArea" type="Area2D" parent="." unique_id=628627286]
 
@@ -36,3 +38,6 @@ texture = ExtResource("1_foxna")
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=1446721064]
 polygon = PackedVector2Array(0, 83, 65, 45, 65, -46, 0, -85, -64, -47, -66, 44)
+
+[connection signal="area_entered" from="DetectionArea" to="." method="_on_detection_area_area_entered"]
+[connection signal="area_exited" from="DetectionArea" to="." method="_on_detection_area_area_exited"]

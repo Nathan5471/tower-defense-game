@@ -1,6 +1,6 @@
 extends Node2D
 
-var coins = 8500
+var coins = 250
 @onready var hearts = [$Heart1, $Heart2, $Heart3, $Heart4, $Heart5]
 @onready var coinAmountLabel = $CoinAmount
 @onready var openShopButton = $OpenShop

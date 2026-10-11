@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dss50uv6beg15"]
+
+[ext_resource type="Texture2D" uid="uid://dxed23ofir6x6" path="res://assets/Towers/Archer/arrow.png" id="1_0a6pm"]
+[ext_resource type="Script" uid="uid://drc4vbjwmb550" path="res://objects/projectileManager.gd" id="1_fxuop"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sik88"]
+radius = 12.0
+height = 38.0
+
+[node name="ArrowProjectile" type="Area2D" unique_id=624632567]
+z_index = 1
+script = ExtResource("1_fxuop")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1044811485]
+texture = ExtResource("1_0a6pm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=397244108]
+shape = SubResource("CapsuleShape2D_sik88")
