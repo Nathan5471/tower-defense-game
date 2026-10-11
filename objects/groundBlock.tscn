@@ -2,10 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://dsd0qq1dt35nm" path="res://assets/Landscape tiles/grass.png" id="1_7nadc"]
 [ext_resource type="Script" uid="uid://c7hx4paeww0yr" path="res://scripts/groundBlockManager.gd" id="1_exr44"]
+[ext_resource type="PackedScene" uid="uid://didstxgwid1dw" path="res://objects/archerTower.tscn" id="2_2uqbf"]
+[ext_resource type="PackedScene" uid="uid://cwftwhga6n124" path="res://objects/wizardTower.tscn" id="3_o6c8y"]
 
 [node name="GroundBlock" type="Area2D" unique_id=2100741410]
 script = ExtResource("1_exr44")
-canPlace = null
+archerTowerScene = ExtResource("2_2uqbf")
+wizardTowerScene = ExtResource("3_o6c8y")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2100483433]
 texture = ExtResource("1_7nadc")
@@ -14,3 +17,7 @@ texture = ExtResource("1_7nadc")
 position = Vector2(-43, -68)
 rotation = 0.7853982
 polygon = PackedVector2Array(-4.2426376, -65.05383, 135.76451, -103.237595, 96.166534, 33.941124, -42.426407, 73.53911)
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

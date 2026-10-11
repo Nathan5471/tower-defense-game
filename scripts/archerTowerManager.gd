@@ -1,6 +1,7 @@
 extends Area2D
 
 @export_range(0, 2) var level: int = 0
+var disabled: bool = false
 @onready var sprite = $Sprite2D
 @onready var detectionOverlay = $DetectionArea/DetectionOverlay
 
@@ -9,7 +10,12 @@ func _ready() -> void:
 		sprite.texture = load("res://assets/Towers/Archer/archer_level_" + str(level) + ".png")
 
 func hideDetectionOverlay() -> void:
-	detectionOverlay.visible = false
+	if detectionOverlay:
+		detectionOverlay.visible = false
 
 func showDetectionOverlay() -> void:
-	detectionOverlay.visible = true
+	if detectionOverlay:
+		detectionOverlay.visible = true
+
+func disable() -> void:
+	disabled = true

@@ -28,7 +28,6 @@ canPlace = false
 
 [node name="GroundBlock2" parent="Blocks" unique_id=1624031091 instance=ExtResource("1_0xm2m")]
 position = Vector2(-711, -423)
-canPlace = true
 
 [node name="GroundBlock6" parent="Blocks" unique_id=851714296 instance=ExtResource("1_0xm2m")]
 position = Vector2(-336, -494)
@@ -36,11 +35,9 @@ canPlace = false
 
 [node name="GroundBlock5" parent="Blocks" unique_id=988268919 instance=ExtResource("1_0xm2m")]
 position = Vector2(-459, -424)
-canPlace = true
 
 [node name="GroundBlock4" parent="Blocks" unique_id=690415751 instance=ExtResource("1_0xm2m")]
 position = Vector2(-584, -353)
-canPlace = true
 
 [node name="GroundBlock7" parent="Blocks" unique_id=1088329824 instance=ExtResource("1_0xm2m")]
 position = Vector2(-85, -495)
@@ -56,7 +53,6 @@ canPlace = false
 
 [node name="GroundBlock8" parent="Blocks" unique_id=1194350186 instance=ExtResource("1_0xm2m")]
 position = Vector2(42, -425)
-canPlace = true
 
 [node name="GroundBlock16" parent="Blocks" unique_id=485971243 instance=ExtResource("1_0xm2m")]
 position = Vector2(911, -498)
@@ -68,7 +64,6 @@ canPlace = false
 
 [node name="GroundBlock18" parent="Blocks" unique_id=487283140 instance=ExtResource("1_0xm2m")]
 position = Vector2(786, -426)
-canPlace = true
 
 [node name="GroundBlock19" parent="Blocks" unique_id=1071491070 instance=ExtResource("1_0xm2m")]
 position = Vector2(1033, -426)
@@ -76,27 +71,21 @@ canPlace = false
 
 [node name="GroundBlock10" parent="Blocks" unique_id=303847326 instance=ExtResource("1_0xm2m")]
 position = Vector2(290, -424)
-canPlace = true
 
 [node name="GroundBlock11" parent="Blocks" unique_id=1080333468 instance=ExtResource("1_0xm2m")]
 position = Vector2(166, -353)
-canPlace = true
 
 [node name="GroundBlock13" parent="Blocks" unique_id=1037281142 instance=ExtResource("1_0xm2m")]
 position = Vector2(537, -424)
-canPlace = true
 
 [node name="GroundBlock14" parent="Blocks" unique_id=961587186 instance=ExtResource("1_0xm2m")]
 position = Vector2(414, -354)
-canPlace = true
 
 [node name="GroundBlock15" parent="Blocks" unique_id=811383783 instance=ExtResource("1_0xm2m")]
 position = Vector2(291, -284)
-canPlace = true
 
 [node name="GroundBlock20" parent="Blocks" unique_id=1795375934 instance=ExtResource("1_0xm2m")]
 position = Vector2(661, -354)
-canPlace = true
 
 [node name="GroundBlock21" parent="Blocks" unique_id=316450508 instance=ExtResource("1_0xm2m")]
 position = Vector2(909, -355)
@@ -104,23 +93,18 @@ canPlace = false
 
 [node name="GroundBlock22" parent="Blocks" unique_id=1606086944 instance=ExtResource("1_0xm2m")]
 position = Vector2(786, -285)
-canPlace = true
 
 [node name="GroundBlock23" parent="Blocks" unique_id=765728254 instance=ExtResource("1_0xm2m")]
 position = Vector2(539, -284)
-canPlace = true
 
 [node name="GroundBlock24" parent="Blocks" unique_id=496807477 instance=ExtResource("1_0xm2m")]
 position = Vector2(414, -212)
-canPlace = true
 
 [node name="GroundBlock25" parent="Blocks" unique_id=1111283618 instance=ExtResource("1_0xm2m")]
 position = Vector2(661, -212)
-canPlace = true
 
 [node name="GroundBlock27" parent="Blocks" unique_id=279737365 instance=ExtResource("1_0xm2m")]
 position = Vector2(537, -141)
-canPlace = true
 
 [node name="RoadBlock" parent="Blocks" unique_id=1992821424 instance=ExtResource("1_ig7tw")]
 position = Vector2(-958, -425)
@@ -155,7 +139,6 @@ position = Vector2(42, -282)
 
 [node name="GroundBlock62" parent="Blocks" unique_id=706154803 instance=ExtResource("1_0xm2m")]
 position = Vector2(-202, -286)
-canPlace = true
 
 [node name="GroundBlock120" parent="Blocks" unique_id=807059302 instance=ExtResource("1_0xm2m")]
 position = Vector2(-1073, -355)
@@ -175,7 +158,6 @@ canPlace = false
 
 [node name="GroundBlock124" parent="Blocks" unique_id=818469291 instance=ExtResource("1_0xm2m")]
 position = Vector2(-820, -218)
-canPlace = true
 
 [node name="GroundBlock125" parent="Blocks" unique_id=298957390 instance=ExtResource("1_0xm2m")]
 position = Vector2(-945, -146)
@@ -183,39 +165,30 @@ canPlace = false
 
 [node name="GroundBlock126" parent="Blocks" unique_id=1839929023 instance=ExtResource("1_0xm2m")]
 position = Vector2(-698, -146)
-canPlace = true
 
 [node name="GroundBlock127" parent="Blocks" unique_id=1201585548 instance=ExtResource("1_0xm2m")]
 position = Vector2(-822, -75)
-canPlace = true
 
 [node name="GroundBlock63" parent="Blocks" unique_id=818797521 instance=ExtResource("1_0xm2m")]
 position = Vector2(-327, -214)
-canPlace = true
 
 [node name="GroundBlock64" parent="Blocks" unique_id=349199845 instance=ExtResource("1_0xm2m")]
 position = Vector2(-79, -215)
-canPlace = true
 
 [node name="GroundBlock65" parent="Blocks" unique_id=1633093778 instance=ExtResource("1_0xm2m")]
 position = Vector2(-202, -145)
-canPlace = true
 
 [node name="GroundBlock66" parent="Blocks" unique_id=2095511830 instance=ExtResource("1_0xm2m")]
 position = Vector2(-449, -144)
-canPlace = true
 
 [node name="GroundBlock67" parent="Blocks" unique_id=1670104861 instance=ExtResource("1_0xm2m")]
 position = Vector2(-574, -72)
-canPlace = true
 
 [node name="GroundBlock68" parent="Blocks" unique_id=92062693 instance=ExtResource("1_0xm2m")]
 position = Vector2(-327, -72)
-canPlace = true
 
 [node name="GroundBlock69" parent="Blocks" unique_id=1609028217 instance=ExtResource("1_0xm2m")]
 position = Vector2(-451, -1)
-canPlace = true
 
 [node name="GroundBlock128" parent="Blocks" unique_id=1490466677 instance=ExtResource("1_0xm2m")]
 position = Vector2(-1063, -78)
@@ -231,19 +204,15 @@ canPlace = false
 
 [node name="GroundBlock70" parent="Blocks" unique_id=548607901 instance=ExtResource("1_0xm2m")]
 position = Vector2(-699, 0)
-canPlace = true
 
 [node name="GroundBlock71" parent="Blocks" unique_id=163471936 instance=ExtResource("1_0xm2m")]
 position = Vector2(-574, 69)
-canPlace = true
 
 [node name="GroundBlock72" parent="Blocks" unique_id=2020139270 instance=ExtResource("1_0xm2m")]
 position = Vector2(-820, 66)
-canPlace = true
 
 [node name="GroundBlock73" parent="Blocks" unique_id=614035040 instance=ExtResource("1_0xm2m")]
 position = Vector2(-697, 137)
-canPlace = true
 
 [node name="GroundBlock74" parent="Blocks" unique_id=2124988007 instance=ExtResource("1_0xm2m")]
 position = Vector2(-945, 138)
@@ -251,7 +220,6 @@ canPlace = false
 
 [node name="GroundBlock75" parent="Blocks" unique_id=1540026754 instance=ExtResource("1_0xm2m")]
 position = Vector2(-820, 207)
-canPlace = true
 
 [node name="RoadBlock10" parent="Blocks" unique_id=1801484144 instance=ExtResource("1_ig7tw")]
 position = Vector2(164, -212)
@@ -267,27 +235,21 @@ direction = 2
 
 [node name="GroundBlock26" parent="Blocks" unique_id=496648640 instance=ExtResource("1_0xm2m")]
 position = Vector2(289, -140)
-canPlace = true
 
 [node name="GroundBlock28" parent="Blocks" unique_id=683150014 instance=ExtResource("1_0xm2m")]
 position = Vector2(414, -71)
-canPlace = true
 
 [node name="GroundBlock29" parent="Blocks" unique_id=1776129769 instance=ExtResource("1_0xm2m")]
 position = Vector2(168, -74)
-canPlace = true
 
 [node name="GroundBlock30" parent="Blocks" unique_id=1195927759 instance=ExtResource("1_0xm2m")]
 position = Vector2(291, -3)
-canPlace = true
 
 [node name="GroundBlock31" parent="Blocks" unique_id=1895198615 instance=ExtResource("1_0xm2m")]
 position = Vector2(43, -2)
-canPlace = true
 
 [node name="GroundBlock32" parent="Blocks" unique_id=1581379386 instance=ExtResource("1_0xm2m")]
 position = Vector2(168, 67)
-canPlace = true
 
 [node name="GroundBlock33" parent="Blocks" unique_id=1730473523 instance=ExtResource("1_0xm2m")]
 position = Vector2(1035, -286)
@@ -299,7 +261,6 @@ canPlace = false
 
 [node name="GroundBlock35" parent="Blocks" unique_id=1956502179 instance=ExtResource("1_0xm2m")]
 position = Vector2(787, -143)
-canPlace = true
 
 [node name="GroundBlock50" parent="Blocks" unique_id=2055732466 instance=ExtResource("1_0xm2m")]
 position = Vector2(1033, -146)
@@ -307,19 +268,15 @@ canPlace = false
 
 [node name="GroundBlock36" parent="Blocks" unique_id=1908995131 instance=ExtResource("1_0xm2m")]
 position = Vector2(663, -72)
-canPlace = true
 
 [node name="GroundBlock37" parent="Blocks" unique_id=850982785 instance=ExtResource("1_0xm2m")]
 position = Vector2(540, -2)
-canPlace = true
 
 [node name="GroundBlock38" parent="Blocks" unique_id=1497544689 instance=ExtResource("1_0xm2m")]
 position = Vector2(417, 66)
-canPlace = true
 
 [node name="GroundBlock39" parent="Blocks" unique_id=2062445320 instance=ExtResource("1_0xm2m")]
 position = Vector2(294, 136)
-canPlace = true
 
 [node name="GroundBlock40" parent="Blocks" unique_id=1514790854 instance=ExtResource("1_0xm2m")]
 position = Vector2(911, -75)
@@ -327,7 +284,6 @@ canPlace = false
 
 [node name="GroundBlock41" parent="Blocks" unique_id=885737488 instance=ExtResource("1_0xm2m")]
 position = Vector2(786, -3)
-canPlace = true
 
 [node name="GroundBlock42" parent="Blocks" unique_id=195949691 instance=ExtResource("1_0xm2m")]
 position = Vector2(1029, -4)
@@ -339,27 +295,21 @@ canPlace = false
 
 [node name="GroundBlock44" parent="Blocks" unique_id=267313797 instance=ExtResource("1_0xm2m")]
 position = Vector2(661, 69)
-canPlace = true
 
 [node name="GroundBlock45" parent="Blocks" unique_id=2078620401 instance=ExtResource("1_0xm2m")]
 position = Vector2(782, 137)
-canPlace = true
 
 [node name="GroundBlock46" parent="Blocks" unique_id=1042297919 instance=ExtResource("1_0xm2m")]
 position = Vector2(540, 135)
-canPlace = true
 
 [node name="GroundBlock47" parent="Blocks" unique_id=1982425352 instance=ExtResource("1_0xm2m")]
 position = Vector2(659, 205)
-canPlace = true
 
 [node name="GroundBlock48" parent="Blocks" unique_id=1250052238 instance=ExtResource("1_0xm2m")]
 position = Vector2(415, 207)
-canPlace = true
 
 [node name="GroundBlock49" parent="Blocks" unique_id=663981914 instance=ExtResource("1_0xm2m")]
 position = Vector2(540, 278)
-canPlace = true
 
 [node name="GroundBlock51" parent="Blocks" unique_id=828545675 instance=ExtResource("1_0xm2m")]
 position = Vector2(1031, 136)
@@ -371,11 +321,9 @@ canPlace = false
 
 [node name="GroundBlock53" parent="Blocks" unique_id=2058938087 instance=ExtResource("1_0xm2m")]
 position = Vector2(785, 274)
-canPlace = true
 
 [node name="GroundBlock54" parent="Blocks" unique_id=454636542 instance=ExtResource("1_0xm2m")]
 position = Vector2(662, 344)
-canPlace = true
 
 [node name="RoadBlock13" parent="Blocks" unique_id=1672683846 instance=ExtResource("1_ig7tw")]
 position = Vector2(-202, -5)
@@ -409,7 +357,6 @@ canPlace = false
 
 [node name="GroundBlock57" parent="Blocks" unique_id=532858813 instance=ExtResource("1_0xm2m")]
 position = Vector2(786, 413)
-canPlace = true
 
 [node name="RoadBlock22" parent="Blocks" unique_id=1370020615 instance=ExtResource("1_ig7tw")]
 position = Vector2(664, 484)
@@ -420,7 +367,6 @@ canPlace = false
 
 [node name="GroundBlock59" parent="Blocks" unique_id=1029503827 instance=ExtResource("1_0xm2m")]
 position = Vector2(908, 482)
-canPlace = true
 
 [node name="RoadBlock23" parent="Blocks" unique_id=1918358441 instance=ExtResource("1_ig7tw")]
 position = Vector2(786, 553)
@@ -438,23 +384,18 @@ position = Vector2(909, 623)
 
 [node name="GroundBlock76" parent="Blocks" unique_id=1554083562 instance=ExtResource("1_0xm2m")]
 position = Vector2(-321, 65)
-canPlace = true
 
 [node name="GroundBlock77" parent="Blocks" unique_id=1875733612 instance=ExtResource("1_0xm2m")]
 position = Vector2(-446, 137)
-canPlace = true
 
 [node name="GroundBlock78" parent="Blocks" unique_id=9716812 instance=ExtResource("1_0xm2m")]
 position = Vector2(-199, 137)
-canPlace = true
 
 [node name="GroundBlock79" parent="Blocks" unique_id=1991808840 instance=ExtResource("1_0xm2m")]
 position = Vector2(-323, 208)
-canPlace = true
 
 [node name="GroundBlock80" parent="Blocks" unique_id=1778927551 instance=ExtResource("1_0xm2m")]
 position = Vector2(-571, 209)
-canPlace = true
 
 [node name="GroundBlock111" parent="Blocks" unique_id=1882186215 instance=ExtResource("1_0xm2m")]
 position = Vector2(-1066, 206)
@@ -470,43 +411,33 @@ canPlace = false
 
 [node name="GroundBlock81" parent="Blocks" unique_id=1497532916 instance=ExtResource("1_0xm2m")]
 position = Vector2(-446, 278)
-canPlace = true
 
 [node name="GroundBlock82" parent="Blocks" unique_id=661626851 instance=ExtResource("1_0xm2m")]
 position = Vector2(-692, 275)
-canPlace = true
 
 [node name="GroundBlock83" parent="Blocks" unique_id=277824812 instance=ExtResource("1_0xm2m")]
 position = Vector2(-569, 346)
-canPlace = true
 
 [node name="GroundBlock84" parent="Blocks" unique_id=395347160 instance=ExtResource("1_0xm2m")]
 position = Vector2(-817, 347)
-canPlace = true
 
 [node name="GroundBlock85" parent="Blocks" unique_id=964650827 instance=ExtResource("1_0xm2m")]
 position = Vector2(-692, 416)
-canPlace = true
 
 [node name="GroundBlock86" parent="Blocks" unique_id=176232449 instance=ExtResource("1_0xm2m")]
 position = Vector2(-73, 206)
-canPlace = true
 
 [node name="GroundBlock87" parent="Blocks" unique_id=974847448 instance=ExtResource("1_0xm2m")]
 position = Vector2(-197, 277)
-canPlace = true
 
 [node name="GroundBlock88" parent="Blocks" unique_id=941615330 instance=ExtResource("1_0xm2m")]
 position = Vector2(-320, 347)
-canPlace = true
 
 [node name="GroundBlock89" parent="Blocks" unique_id=319437402 instance=ExtResource("1_0xm2m")]
 position = Vector2(-443, 415)
-canPlace = true
 
 [node name="GroundBlock90" parent="Blocks" unique_id=2057786165 instance=ExtResource("1_0xm2m")]
 position = Vector2(-566, 485)
-canPlace = true
 
 [node name="GroundBlock113" parent="Blocks" unique_id=1018218784 instance=ExtResource("1_0xm2m")]
 position = Vector2(-941, 418)
@@ -514,7 +445,6 @@ canPlace = false
 
 [node name="GroundBlock114" parent="Blocks" unique_id=342282786 instance=ExtResource("1_0xm2m")]
 position = Vector2(-816, 487)
-canPlace = true
 
 [node name="GroundBlock115" parent="Blocks" unique_id=328939508 instance=ExtResource("1_0xm2m")]
 position = Vector2(-690, 556)
@@ -522,35 +452,27 @@ canPlace = false
 
 [node name="GroundBlock91" parent="Blocks" unique_id=554186100 instance=ExtResource("1_0xm2m")]
 position = Vector2(51, 274)
-canPlace = true
 
 [node name="GroundBlock92" parent="Blocks" unique_id=1720118640 instance=ExtResource("1_0xm2m")]
 position = Vector2(-74, 346)
-canPlace = true
 
 [node name="GroundBlock93" parent="Blocks" unique_id=658244050 instance=ExtResource("1_0xm2m")]
 position = Vector2(169, 345)
-canPlace = true
 
 [node name="GroundBlock94" parent="Blocks" unique_id=288983875 instance=ExtResource("1_0xm2m")]
 position = Vector2(45, 416)
-canPlace = true
 
 [node name="GroundBlock95" parent="Blocks" unique_id=1448584054 instance=ExtResource("1_0xm2m")]
 position = Vector2(-199, 418)
-canPlace = true
 
 [node name="GroundBlock101" parent="Blocks" unique_id=1602971775 instance=ExtResource("1_0xm2m")]
 position = Vector2(296, 413)
-canPlace = true
 
 [node name="GroundBlock102" parent="Blocks" unique_id=860498348 instance=ExtResource("1_0xm2m")]
 position = Vector2(171, 485)
-canPlace = true
 
 [node name="GroundBlock103" parent="Blocks" unique_id=1270404855 instance=ExtResource("1_0xm2m")]
 position = Vector2(414, 484)
-canPlace = true
 
 [node name="GroundBlock104" parent="Blocks" unique_id=2093940236 instance=ExtResource("1_0xm2m")]
 position = Vector2(290, 555)
@@ -558,11 +480,9 @@ canPlace = false
 
 [node name="GroundBlock96" parent="Blocks" unique_id=8003770 instance=ExtResource("1_0xm2m")]
 position = Vector2(-78, 486)
-canPlace = true
 
 [node name="GroundBlock97" parent="Blocks" unique_id=851553354 instance=ExtResource("1_0xm2m")]
 position = Vector2(-320, 484)
-canPlace = true
 
 [node name="GroundBlock98" parent="Blocks" unique_id=452484510 instance=ExtResource("1_0xm2m")]
 position = Vector2(-201, 554)

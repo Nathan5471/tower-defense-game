@@ -1,6 +1,6 @@
 extends Node2D
 
-var coins = 250
+var coins = 650
 @onready var hearts = [$Heart1, $Heart2, $Heart3, $Heart4, $Heart5]
 @onready var coinAmountLabel = $CoinAmount
 @onready var openShopButton = $OpenShop
@@ -18,6 +18,14 @@ func setHealth(health: int) -> void:
 func setCoins(newCoins: int) -> void:
 	coins = newCoins
 	coinAmountLabel.text = str(coins)
+	if (coins < 200):
+		buyArcherButton.disabled = true
+	else:
+		buyArcherButton.disabled = false
+	if (coins < 550):
+		buyWizardButton.disabled = true
+	else:
+		buyWizardButton.disabled = false
 
 func _on_open_shop_pressed() -> void:
 	openShopButton.visible = false
@@ -26,7 +34,7 @@ func _on_open_shop_pressed() -> void:
 		buyArcherButton.disabled = true
 	else:
 		buyArcherButton.disabled = false
-	if (coins < 500):
+	if (coins < 550):
 		buyWizardButton.disabled = true
 	else:
 		buyWizardButton.disabled = false
@@ -49,7 +57,7 @@ func finishPurchase() -> void:
 		buyArcherButton.disabled = true
 	else:
 		buyArcherButton.disabled = false
-	if (coins < 500):
+	if (coins < 550):
 		buyWizardButton.disabled = true
 	else:
 		buyWizardButton.disabled = false
