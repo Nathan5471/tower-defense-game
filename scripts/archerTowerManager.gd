@@ -60,8 +60,6 @@ func fireAtEnemy(target: PathFollow2D):
 	projectile.startProjectile(target, projectileSpeed, projectileDamage)
 
 func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
-	if disabled:
-		return
 	if (event is InputEventMouseButton && event.pressed && event.button_index == MOUSE_BUTTON_LEFT):
 		var levelManager = get_parent().get_parent().get_parent()
 		var upgradeStats
@@ -71,7 +69,7 @@ func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 			upgradeStats = null
 		var upgradeIcon
 		if (currentLevel < 3):
-			upgradeIcon = load("res://assets/Towers/Archer/archer_level_%d.png" % (currentLevel + 1))
+			upgradeIcon = load("res://assets/Towers/Archer/archer_level_%d.png" % (currentLevel))
 		else:
 			upgradeIcon = null
 		levelManager.handleOpenUpgradeMenu(self, sprite.texture, upgradeIcon, "Archer", currentLevel, "%s shot/s | %s damage" % [fireRate, projectileDamage], "" if upgradeStats == null else "%d damage

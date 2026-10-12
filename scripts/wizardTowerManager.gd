@@ -1,12 +1,17 @@
 extends Area2D
 
+const upgradeLevels = [{"fireRate": 2, "damage": 10, "cost": 550}, {"fireRate": 3, "damage": 30, "cost": 1050}, {"fireRate": 5, "damage": 40, "cost": 1600}]
+const sellValues: Array[int] = [350, 1000, 1500]
+
 @export_range(0, 2) var level: int = 0
 @export var projectileSpeed: int = 1600
 @export var projectileDamage: int = 10
 @export var projectileScene: PackedScene
+var fireRate = 2
+var currentLevel: int = 1
 var disabled: bool = false
-@onready var sprite = $Sprite2D
-@onready var detectionOverlay = $DetectionArea/DetectionOverlay
+@onready var sprite: Sprite2D = $Sprite2D
+@onready var detectionOverlay: Sprite2D = $DetectionArea/DetectionOverlay
 var detectedEnemies: Array[PathFollow2D] = []
 var timeSinceLastShot: float = 100 # I chose a random number so it can fire when you place it 
 
@@ -43,7 +48,7 @@ func _process(delta: float) -> void:
 		return
 	detectedEnemies = detectedEnemies.filter(func(enemy): return is_instance_valid(enemy))
 	timeSinceLastShot += delta
-	if (detectedEnemies.size() > 0 && timeSinceLastShot > 0.5):
+	if (detectedEnemies.size() > 0 && timeSinceLastShot > 1.0 / fireRate):
 		timeSinceLastShot = 0.0
 		var target = detectedEnemies[0]
 		fireAtEnemy(target)
@@ -53,3 +58,19 @@ func fireAtEnemy(target: PathFollow2D):
 	get_tree().current_scene.add_child(projectile)
 	projectile.global_position = global_position
 	projectile.startProjectile(target, projectileSpeed, projectileDamage)
+
+func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
+	if (event is InputEventMouseButton && event.pressed && event.button_index == MOUSE_BUTTON_LEFT):
+		var levelManager = get_parent().get_parent().get_parent()
+		var upgradeStats
+		if (currentLevel < 3):
+			upgradeStats = upgradeLevels[currentLevel]
+		else:
+			upgradeStats = null
+		var upgradeIcon
+		if (currentLevel < 3):
+			upgradeIcon = load("res://assets/Towers/Wizard/wizard_level_%d.png" % (currentLevel))
+		else:
+			upgradeIcon = null
+		levelManager.handleOpenUpgradeMenu(self, sprite.texture, upgradeIcon, "Wizard", currentLevel, "%s shot/s | %s damage" % [fireRate, projectileDamage], "" if upgradeStats == null else "%d damage
+		%d shots per second" % [upgradeStats.fireRate, upgradeStats.damage], 0 if upgradeStats == null else upgradeStats.cost, sellValues[currentLevel-1])
