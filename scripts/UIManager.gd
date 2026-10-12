@@ -84,11 +84,13 @@ func _on_buy_wizard_pressed() -> void:
 
 func _on_close_menu_pressed() -> void:
 	upgradeMenu.visible = false
+	selectedTower.hideDetectionOverlay()
 	selectedTower = null
 	openShopButton.visible = true
 
 func openUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, newUpgradeSprite: Texture2D, towerName: String, towerLevel: int, currentStats: String, upgradeText: String, newUpgradeCost: int, newSellValue: int):
 	selectedTower = tower
+	selectedTower.showDetectionOverlay()
 	upgradeCost = newUpgradeCost
 	openShopButton.visible = false
 	shop.visible = false
@@ -116,7 +118,7 @@ func openUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, newUpgra
 	$" + str(sellValue)
 
 func _on_buy_upgrade_pressed() -> void:
-	if not selectedTower:
+	if not selectedTower || not upgradeCost:
 		return
 	var levelManager = get_parent()
 	var newCoins = levelManager.handleUpgradeTower(upgradeCost)
@@ -124,3 +126,16 @@ func _on_buy_upgrade_pressed() -> void:
 		return
 	setCoins(newCoins)
 	selectedTower.handleUpgrade()
+
+func _on_sell_tower_pressed() -> void:
+	if not selectedTower || not sellValue:
+		return
+	var towerBlock = selectedTower.get_parent()
+	towerBlock.tower = null
+	towerBlock.canPlace = true
+	selectedTower.queue_free()
+	var levelManager = get_parent()
+	levelManager.addCoins(sellValue)
+	upgradeMenu.visible = false
+	selectedTower = null
+	openShopButton.visible = true
