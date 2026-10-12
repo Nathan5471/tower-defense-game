@@ -39,5 +39,6 @@ texture = ExtResource("1_foxna")
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=1446721064]
 polygon = PackedVector2Array(0, 83, 65, 45, 65, -46, 0, -85, -64, -47, -66, 44)
 
+[connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="area_entered" from="DetectionArea" to="." method="_on_detection_area_area_entered"]
 [connection signal="area_exited" from="DetectionArea" to="." method="_on_detection_area_area_exited"]

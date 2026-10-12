@@ -127,6 +127,7 @@ $550
 icon = ExtResource("7_730kw")
 
 [node name="UpgradeMenu" type="ColorRect" parent="." unique_id=98950317]
+visible = false
 offset_left = 637.0
 offset_top = -516.0
 offset_right = 939.0
@@ -143,8 +144,8 @@ theme_override_fonts/font = ExtResource("3_8rm5b")
 theme_override_font_sizes/font_size = 32
 text = "X"
 
-[node name="CurrentSprite" type="Sprite2D" parent="UpgradeMenu" unique_id=565833008]
-position = Vector2(156, 185)
+[node name="CurrentSprite" type="Sprite2D" parent="UpgradeMenu" unique_id=2081153274]
+position = Vector2(157.00003, 187)
 scale = Vector2(1.2923077, 1.2923076)
 texture = ExtResource("6_nqmbn")
 

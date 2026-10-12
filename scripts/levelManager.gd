@@ -37,3 +37,6 @@ func handlePurchase(type: String, cost: int) -> int:
 func finishPurchase() -> void:
 	currentPurchase = "none"
 	ui.finishPurchase()
+
+func handleOpenUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, upgradeSprite: CompressedTexture2D, towerName: String, towerLevel: int, currentStats: String, upgradeText: String, newUpgradeCost: int, newSellValue: int):
+	ui.openUpgradeMenu(tower, currentSprite, upgradeSprite, towerName, towerLevel, currentStats, upgradeText, newUpgradeCost, newSellValue)

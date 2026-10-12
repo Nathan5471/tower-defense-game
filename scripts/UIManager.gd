@@ -35,6 +35,11 @@ func setCoins(newCoins: int) -> void:
 		buyWizardButton.disabled = true
 	else:
 		buyWizardButton.disabled = false
+	if (upgradeAvailable):
+		if (coins < upgradeCost):
+			buyUpgradeButton.disabled = true
+		else:
+			buyUpgradeButton.disabled = false
 
 func _on_open_shop_pressed() -> void:
 	openShopButton.visible = false
@@ -47,11 +52,6 @@ func _on_open_shop_pressed() -> void:
 		buyWizardButton.disabled = true
 	else:
 		buyWizardButton.disabled = false
-	if (upgradeAvailable):
-		if (coins < upgradeCost):
-			buyUpgradeButton.disabled = true
-		else:
-			buyUpgradeButton.disabled = false
 
 func _on_close_shop_pressed() -> void:
 	shop.visible = false
@@ -86,8 +86,8 @@ func _on_close_menu_pressed() -> void:
 	upgradeMenu.visible = false
 	openShopButton.visible = true
 
-func openUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, towerName: String, towerLevel: int, currentStats: String, upgradeText: String, newUpgradeCost: int, newSellValue: int):
-	tower = tower
+func openUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, newUpgradeSprite: Texture2D, towerName: String, towerLevel: int, currentStats: String, upgradeText: String, newUpgradeCost: int, newSellValue: int):
+	selectedTower = tower
 	upgradeCost = newUpgradeCost
 	openShopButton.visible = false
 	shop.visible = false
@@ -99,7 +99,8 @@ func openUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, towerNam
 		upgradeAvailable = true
 		buyUpgradeButton.text = "Buy Upgrade
 		%s
-		$%d" % [upgradeInfo, upgradeCost]
+		$%d" % [upgradeText, upgradeCost]
+		buyUpgradeButton.icon = newUpgradeSprite
 		if (coins > upgradeCost):
 			buyUpgradeButton.disabled = false
 		else:
@@ -107,6 +108,7 @@ func openUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, towerNam
 	else:
 		upgradeAvailable = false
 		buyUpgradeButton.text = "MAX LEVEL ACHIEVED!"
+		buyUpgradeButton.icon = null
 		buyUpgradeButton.disabled = true
 	sellValue = newSellValue
 	sellTowerButton.text = "Sell Tower
