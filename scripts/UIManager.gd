@@ -7,6 +7,7 @@ var upgradeAvailable: bool = false
 var sellValue: int = 0
 @onready var hearts = [$Heart1, $Heart2, $Heart3, $Heart4, $Heart5]
 @onready var coinAmountLabel = $CoinAmount
+@onready var waveLabel = $Wave
 @onready var openShopButton = $OpenShop
 @onready var shop = $Shop
 @onready var buyArcherButton = $Shop/BuyArcher
@@ -40,6 +41,9 @@ func setCoins(newCoins: int) -> void:
 			buyUpgradeButton.disabled = true
 		else:
 			buyUpgradeButton.disabled = false
+
+func setWave(wave: int) -> void:
+	waveLabel.text = "Wave: %d/13" % wave
 
 func _on_open_shop_pressed() -> void:
 	openShopButton.visible = false

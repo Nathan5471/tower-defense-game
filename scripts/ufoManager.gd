@@ -3,14 +3,16 @@ extends PathFollow2D
 var level: int = 0
 var health: int = 10
 var speed: int = 125
+var value: int = 50
 var spriteNeedsUpdating = false
 @onready var sprite = $Area2D/Sprite2D
 @onready var levelManager: Node2D = get_parent().get_parent() as Node2D
 
-func setLevel(newLevel: int, newHealth: int, newSpeed: int) -> void:
+func setLevel(newLevel: int, newHealth: int, newSpeed: int, newValue: int) -> void:
 	level = newLevel
 	health = newHealth
 	speed = newSpeed
+	value = newValue
 	if (level != 0):
 		if not sprite:
 			spriteNeedsUpdating = true
@@ -31,7 +33,7 @@ func handleTakeDamage(damage: int) -> void:
 
 func handleDeath() -> void:
 	if levelManager && levelManager.has_method("addCoins"):
-		levelManager.addCoins(50)
+		levelManager.addCoins(value)
 	queue_free()
 
 func handleReachEnd() -> void:

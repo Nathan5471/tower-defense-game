@@ -61,6 +61,15 @@ theme_override_fonts/font = ExtResource("3_8rm5b")
 theme_override_font_sizes/font_size = 64
 text = "250"
 
+[node name="Wave" type="Label" parent="." unique_id=2069593218]
+offset_left = -407.0
+offset_top = -553.0
+offset_right = -238.0
+offset_bottom = -475.0
+theme_override_fonts/font = ExtResource("3_8rm5b")
+theme_override_font_sizes/font_size = 64
+text = "Wave: 1/13"
+
 [node name="OpenShop" type="Button" parent="." unique_id=1549477613]
 offset_left = 870.0
 offset_top = -532.0
