@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://b1j2fj1bc18va"]
+
+[ext_resource type="Script" uid="uid://c48afxmmpd2k8" path="res://scripts/gameOverManager.gd" id="1_ky4b6"]
+[ext_resource type="FontFile" uid="uid://p2npfcjktcu4" path="res://assets/Unkempt-Bold.ttf" id="1_xlotp"]
+
+[node name="GameOver" type="Node2D" unique_id=194564873]
+script = ExtResource("1_ky4b6")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2121699423]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1807743009]
+offset_left = -700.0
+offset_top = -400.0
+offset_right = 700.0
+offset_bottom = 400.0
+color = Color(0.87058824, 0.72156864, 0.5294118, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1175919000]
+offset_left = -600.0
+offset_top = -234.0
+offset_right = 623.0
+offset_bottom = -80.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_xlotp")
+theme_override_font_sizes/font_size = 128
+text = "Congrats on winning!!!"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=912741889]
+offset_left = -224.0
+offset_top = 90.0
+offset_right = 224.0
+offset_bottom = 214.0
+theme_override_fonts/font = ExtResource("1_xlotp")
+theme_override_font_sizes/font_size = 96
+text = "Play Again"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

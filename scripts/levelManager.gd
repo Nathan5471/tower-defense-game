@@ -10,6 +10,7 @@ var currentPurchase: String = "none"
 var currentSpawn: int = 1
 var finalSpawn: bool = false
 @export var ufoScene: PackedScene 
+@export var gameOverScene: PackedScene
 @onready var path = $UFOPath
 @onready var timer = $Timer
 @onready var ui = $UI
@@ -49,12 +50,17 @@ func _on_timer_timeout() -> void:
 	else:
 		timer.stop()
 		currentWave += 1
+		if currentWave == 14:
+			var gameOver = gameOverScene.instantiate()
+			get_tree().change_scene_to_node(gameOver)
 		handleStartWave()
 
 func deductHealth() -> void:
 	health -= 1
 	if (health < 1):
-		print("You DIED")
+		var gameOver = gameOverScene.instantiate()
+		gameOver.setWinStatus(false)
+		get_tree().change_scene_to_node(gameOver)
 	ui.setHealth(health)
 
 func addCoins(amount: int) -> void:

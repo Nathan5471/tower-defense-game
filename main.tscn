@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cgyyxqswf61bm" path="res://scripts/levelManager.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://lfs2yf05ig3s" path="res://objects/roadBlock.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://cf1vif2xk6q2d" path="res://objects/ufo.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b1j2fj1bc18va" path="res://gameOver.tscn" id="3_7mycd"]
 [ext_resource type="PackedScene" uid="uid://fmaosbmsf1p2" path="res://objects/UI.tscn" id="5_lquwl"]
 
 [sub_resource type="Curve2D" id="Curve2D_0xm2m"]
@@ -15,6 +16,7 @@ point_count = 6
 [node name="Main" type="Node2D" unique_id=308983968]
 script = ExtResource("1_h2yge")
 ufoScene = ExtResource("2_1bvp3")
+gameOverScene = ExtResource("3_7mycd")
 
 [node name="Blocks" type="Node2D" parent="." unique_id=1458832009]
 
