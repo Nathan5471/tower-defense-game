@@ -40,3 +40,9 @@ func finishPurchase() -> void:
 
 func handleOpenUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, upgradeSprite: CompressedTexture2D, towerName: String, towerLevel: int, currentStats: String, upgradeText: String, newUpgradeCost: int, newSellValue: int):
 	ui.openUpgradeMenu(tower, currentSprite, upgradeSprite, towerName, towerLevel, currentStats, upgradeText, newUpgradeCost, newSellValue)
+
+func handleUpgradeTower(cost: int) -> int:
+	if (cost > coins):
+		return -1
+	coins -= cost
+	return coins

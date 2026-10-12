@@ -5,8 +5,8 @@ const sellValues: Array[int] = [100, 300, 700]
 
 @export_range(0, 2) var level: int = 0
 @export var projectileSpeed: int = 600
-@export var projectileDamage: int = 5
 @export var projectileScene: PackedScene
+var projectileDamage: int = 5
 var fireRate = 1
 var currentLevel: int = 1
 var disabled: bool = false
@@ -74,3 +74,24 @@ func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 			upgradeIcon = null
 		levelManager.handleOpenUpgradeMenu(self, sprite.texture, upgradeIcon, "Archer", currentLevel, "%s shot/s | %s damage" % [fireRate, projectileDamage], "" if upgradeStats == null else "%d damage
 		%d shots per second" % [upgradeStats.fireRate, upgradeStats.damage], 0 if upgradeStats == null else upgradeStats.cost, sellValues[currentLevel-1])
+
+func handleUpgrade() -> void:
+	if currentLevel == 3:
+		return
+	currentLevel += 1
+	sprite.texture = load("res://assets/Towers/Archer/archer_level_%d.png" % (currentLevel-1))
+	projectileDamage = upgradeLevels[currentLevel-1].damage
+	fireRate = upgradeLevels[currentLevel-1].fireRate
+	var levelManager = get_parent().get_parent().get_parent()
+	var upgradeStats
+	if (currentLevel < 3):
+		upgradeStats = upgradeLevels[currentLevel]
+	else:
+		upgradeStats = null
+	var upgradeIcon
+	if (currentLevel < 3):
+		upgradeIcon = load("res://assets/Towers/Archer/archer_level_%d.png" % (currentLevel))
+	else:
+		upgradeIcon = null
+	levelManager.handleOpenUpgradeMenu(self, sprite.texture, upgradeIcon, "Archer", currentLevel, "%s shot/s | %s damage" % [fireRate, projectileDamage], "" if upgradeStats == null else "%d damage
+	%d shots per second" % [upgradeStats.fireRate, upgradeStats.damage], 0 if upgradeStats == null else upgradeStats.cost, sellValues[currentLevel-1])

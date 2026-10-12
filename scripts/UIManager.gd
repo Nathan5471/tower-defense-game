@@ -84,6 +84,7 @@ func _on_buy_wizard_pressed() -> void:
 
 func _on_close_menu_pressed() -> void:
 	upgradeMenu.visible = false
+	selectedTower = null
 	openShopButton.visible = true
 
 func openUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, newUpgradeSprite: Texture2D, towerName: String, towerLevel: int, currentStats: String, upgradeText: String, newUpgradeCost: int, newSellValue: int):
@@ -113,3 +114,13 @@ func openUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, newUpgra
 	sellValue = newSellValue
 	sellTowerButton.text = "Sell Tower
 	$" + str(sellValue)
+
+func _on_buy_upgrade_pressed() -> void:
+	if not selectedTower:
+		return
+	var levelManager = get_parent()
+	var newCoins = levelManager.handleUpgradeTower(upgradeCost)
+	if (newCoins == -1):
+		return
+	setCoins(newCoins)
+	selectedTower.handleUpgrade()

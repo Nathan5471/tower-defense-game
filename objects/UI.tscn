@@ -196,3 +196,4 @@ $100"
 [connection signal="pressed" from="Shop/BuyArcher" to="." method="_on_buy_archer_pressed"]
 [connection signal="pressed" from="Shop/BuyWizard" to="." method="_on_buy_wizard_pressed"]
 [connection signal="pressed" from="UpgradeMenu/CloseMenu" to="." method="_on_close_menu_pressed"]
+[connection signal="pressed" from="UpgradeMenu/BuyUpgrade" to="." method="_on_buy_upgrade_pressed"]
