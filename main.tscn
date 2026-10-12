@@ -544,7 +544,6 @@ curve = SubResource("Curve2D_0xm2m")
 
 [node name="Timer" type="Timer" parent="." unique_id=1194743426]
 wait_time = 2.5
-autostart = true
 
 [node name="UI" parent="." unique_id=1629065484 instance=ExtResource("5_lquwl")]
 

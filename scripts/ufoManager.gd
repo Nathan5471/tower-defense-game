@@ -1,16 +1,25 @@
 extends PathFollow2D
 
-@export_range(0, 3) var level: int = 0
-@export var health: int = 10
-@export var speed: int = 125
+var level: int = 0
+var health: int = 10
+var speed: int = 125
+var spriteNeedsUpdating = false
 @onready var sprite = $Area2D/Sprite2D
 @onready var levelManager: Node2D = get_parent().get_parent() as Node2D
 
-func _ready() -> void:
+func setLevel(newLevel: int, newHealth: int, newSpeed: int) -> void:
+	level = newLevel
+	health = newHealth
+	speed = newSpeed
 	if (level != 0):
-		sprite.texture = load("res://assets/UFO/UFO-" + str(level) + ".png")
+		if not sprite:
+			spriteNeedsUpdating = true
+			return
+		sprite.texture = load("res://assets/UFO/UFO-%d.png" % level)
 
 func _process(delta: float) -> void:
+	if spriteNeedsUpdating && sprite:
+		sprite.texture = load("res://assets/UFO/UFO-%d.png" % level)
 	progress += speed * delta
 	if (progress_ratio >= 1.0):
 		handleReachEnd()
