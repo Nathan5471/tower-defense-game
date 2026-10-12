@@ -1,6 +1,7 @@
 # Tower Defense Game
 
 This is a super, epic tower defense game with insane amounts of difficulty! Only pro Terra players could ever consider attempting to win.
+Check it out here: <https://nathan5471.itch.io/tower-defense-game>
 
 ## Technologies
 
