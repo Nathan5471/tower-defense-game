@@ -89,6 +89,8 @@ func _on_close_menu_pressed() -> void:
 	openShopButton.visible = true
 
 func openUpgradeMenu(tower: Area2D, currentSprite: CompressedTexture2D, newUpgradeSprite: Texture2D, towerName: String, towerLevel: int, currentStats: String, upgradeText: String, newUpgradeCost: int, newSellValue: int):
+	if selectedTower:
+		selectedTower.hideDetectionOverlay()
 	selectedTower = tower
 	selectedTower.showDetectionOverlay()
 	upgradeCost = newUpgradeCost

@@ -4,7 +4,7 @@ const upgradeLevels = [{"fireRate": 1, "damage": 5, "cost": 200}, {"fireRate": 2
 const sellValues: Array[int] = [100, 300, 700]
 
 @export_range(0, 2) var level: int = 0
-@export var projectileSpeed: int = 850
+@export var projectileSpeed: int = 1500
 @export var projectileScene: PackedScene
 var projectileDamage: int = 5
 var fireRate = 1
